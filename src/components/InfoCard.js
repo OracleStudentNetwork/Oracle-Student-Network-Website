@@ -29,7 +29,7 @@ function InfoCard(props) {
         </Pane>
     );
     const card = [content, img];
-    if (props.reverse) card.reverse();
+    if (props.reverse && !mobile) card.reverse();
     return (
         <Pane
             display="flex"
