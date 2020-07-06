@@ -38,6 +38,9 @@ function Landing() {
                         marginTop="2em"
                         height={40}
                     >
+                        <Pane marginRight={10}>
+                            <i className="fab fa-discord fa-lg"></i>
+                        </Pane>
                         Join our Discord
                     </Button>
                 </Pane>
