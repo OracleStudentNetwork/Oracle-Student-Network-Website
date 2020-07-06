@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import { Pane } from "evergreen-ui";
-import Landing from "./components/Landing";
+import Hero from "./components/Hero";
 import Info from "./components/Info";
 
 function App() {
     return (
         <Pane>
-            <Landing />
+            <Hero />
             <Info />
         </Pane>
     );

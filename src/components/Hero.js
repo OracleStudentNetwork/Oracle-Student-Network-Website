@@ -1,9 +1,9 @@
 import React from "react";
-import Hero from "../assets/hero.png";
+import HeroImage from "../assets/hero.png";
 import { useMediaQuery } from "react-responsive";
 import { Pane, Heading, Button } from "evergreen-ui";
 
-function Landing() {
+function Hero() {
     const mobile = useMediaQuery({ query: "(max-width: 680px)" });
     return (
         <Pane
@@ -50,9 +50,9 @@ function Landing() {
                 justifyContent="center"
                 marginLeft="5%"
             >
-                <img src={Hero} className="hero-image" />
+                <img src={HeroImage} className="hero-image" />
             </Pane>
         </Pane>
     );
 }
-export default Landing;
+export default Hero;
