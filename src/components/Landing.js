@@ -9,7 +9,6 @@ function Landing() {
         <Pane
             display="flex"
             padding={20}
-            marginTop="5em"
             justifyContent="center"
             flexDirection={mobile ? "column" : "row"}
         >
@@ -21,7 +20,12 @@ function Landing() {
             >
                 <Pane>
                     {/* <img src={Logo} width="57" height="51" verticalAlign="middle" /> */}
-                    <Heading size={900} fontSize="48px" verticalAlign="middle">
+                    <Heading
+                        size={900}
+                        fontSize="48px"
+                        verticalAlign="middle"
+                        color="#6845c2"
+                    >
                         Oracle Student Network
                     </Heading>
                     <Heading size={800} marginTop="0.5em">
@@ -31,8 +35,7 @@ function Landing() {
                         iconAfter="arrow-right"
                         appearance="primary"
                         marginTop="2em"
-                        height="40px"
-                        padding={14}
+                        height={40}
                     >
                         Join our Discord
                     </Button>
