@@ -3,7 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import { Pane, Heading, Paragraph } from "evergreen-ui";
 
 function InfoCard(props) {
-    const mobile = useMediaQuery({ query: "(max-width: 1000px)" });
+    const mobile = useMediaQuery({ query: "(max-width: 680px)" });
     const content = (
         <Pane width={mobile ? "100%" : "30%"} marginBottom="1em">
             <Heading

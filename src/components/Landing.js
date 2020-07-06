@@ -4,12 +4,13 @@ import { useMediaQuery } from "react-responsive";
 import { Pane, Heading, Button } from "evergreen-ui";
 
 function Landing() {
-    const mobile = useMediaQuery({ query: "(max-width: 1000px)" });
+    const mobile = useMediaQuery({ query: "(max-width: 680px)" });
     return (
         <Pane
             display="flex"
             padding={20}
             justifyContent="center"
+            marginTop="5em"
             flexDirection={mobile ? "column" : "row"}
         >
             <Pane
@@ -41,7 +42,11 @@ function Landing() {
                     </Button>
                 </Pane>
             </Pane>
-            <Pane display="flex" justifyContent="center" marginLeft="5%">
+            <Pane
+                display={mobile ? "none" : "flex"}
+                justifyContent="center"
+                marginLeft="5%"
+            >
                 <img src={Hero} className="hero-image" />
             </Pane>
         </Pane>
