@@ -28,19 +28,8 @@ function InfoCard(props) {
             <img src={props.img} />
         </Pane>
     );
-    if (props.reverse) {
-        return (
-            <Pane
-                display="flex"
-                justifyContent="space-evenly"
-                margin={32}
-                flexDirection={mobile ? "column" : "row"}
-            >
-                {img}
-                {content}
-            </Pane>
-        );
-    }
+    const card = [content, img];
+    if (props.reverse) card.reverse();
     return (
         <Pane
             display="flex"
@@ -48,8 +37,7 @@ function InfoCard(props) {
             margin={32}
             flexDirection={mobile ? "column" : "row"}
         >
-            {content}
-            {img}
+            {card}
         </Pane>
     );
 }
