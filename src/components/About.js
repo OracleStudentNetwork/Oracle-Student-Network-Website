@@ -24,12 +24,9 @@ function About() {
             display="flex"
             flexDirection={mobile ? "column" : "row"}
             justifyContent="space-between"
-            alignItems="start"
+            alignItems="center"
         >
-            <Pane
-                width={mobile ? "100%" : "40%"}
-                marginTop={mobile ? "" : "3em"}
-            >
+            <Pane width={mobile ? "100%" : "40%"}>
                 <Pane display="flex" alignItems="center" marginBottom="2.5em">
                     <Avatar
                         src={Logo}
@@ -38,7 +35,7 @@ function About() {
                     />
                     <Heading
                         size={900}
-                        fontSize="48px"
+                        fontSize={mobile ? "32px" : "48px"}
                         color="white"
                         textAlign="left"
                         verticalAlign="text-top"
@@ -46,7 +43,7 @@ function About() {
                         Who Are We?
                     </Heading>
                 </Pane>
-                <Text size={600} color="white">
+                <Text size={mobile ? 500 : 600} color="white">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                     natoque penatibus et magnis dis parturient montes, nascetur

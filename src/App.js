@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import { Pane } from "evergreen-ui";
 import { useMediaQuery } from "react-responsive";
+import ScrollableAnchor from "react-scrollable-anchor";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Info from "./components/Info";
 import About from "./components/About";
@@ -11,10 +13,23 @@ function App() {
     const mobile = useMediaQuery({ query: "(max-width: 680px)" });
     return (
         <Pane>
+            <Navbar mobile={mobile} />
             <Hero />
-            <About />
-            <Info />
-            <Contact mobile={mobile} />
+            <ScrollableAnchor id={"info"}>
+                <div>
+                    <About />
+                </div>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={"about"}>
+                <div>
+                    <Info />
+                </div>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={"contact"}>
+                <div>
+                    <Contact mobile={mobile} />
+                </div>
+            </ScrollableAnchor>
         </Pane>
     );
 }

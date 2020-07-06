@@ -19,7 +19,7 @@ function Hero() {
                 justifyContent="center"
                 width={mobile ? "100%" : ""}
             >
-                <Pane>
+                <Pane textAlign={mobile ? "center" : ""}>
                     {/* <img src={Logo} width="57" height="51" verticalAlign="middle" /> */}
                     <Heading
                         size={900}

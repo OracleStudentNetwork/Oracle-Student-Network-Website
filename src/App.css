@@ -10,3 +10,29 @@
     margin: 0;
     padding: 0;
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px lightgray solid;
+    z-index: 10;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    margin: 3vw;
+    /* color: white; */
+}

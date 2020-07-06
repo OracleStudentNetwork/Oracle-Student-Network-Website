@@ -41,8 +41,8 @@ class Contact extends React.Component {
         return (
             <Pane
                 background="#333"
-                paddingTop="12vh"
-                paddingBottom="12vh"
+                paddingTop="15vh"
+                paddingBottom="15vh"
                 paddingRight="15vw"
                 paddingLeft="15vw"
                 textAlign="center"
@@ -90,7 +90,7 @@ class Contact extends React.Component {
                     <Pane marginTop={this.props.mobile ? "1em" : ""}>
                         <iframe
                             src="https://discordapp.com/widget?id=726625462083649637&theme=dark"
-                            width="350"
+                            width={this.props.mobile ? "250" : "350"}
                             height="500"
                             allowtransparency="true"
                             frameborder="0"
