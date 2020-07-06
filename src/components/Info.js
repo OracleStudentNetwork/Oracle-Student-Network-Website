@@ -8,9 +8,8 @@ function Info() {
         <Pane
             display="flex"
             flexDirection="column"
-            marginTop="15vh"
             background="#e8e9f1"
-            paddingTop="5em"
+            paddingTop="15vh"
             paddingBottom="5em"
         >
             <InfoCard
