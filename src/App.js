@@ -8,6 +8,12 @@ import Hero from "./components/Hero";
 import Info from "./components/Info";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({
+    once: true,
+    delay: 200,
+});
 
 function App() {
     const mobile = useMediaQuery({ query: "(max-width: 680px)" });

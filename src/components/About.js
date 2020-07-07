@@ -26,7 +26,7 @@ function About() {
             alignItems="center"
             height="100vh"
         >
-            <Pane width={mobile ? "100%" : "40%"}>
+            <Pane width={mobile ? "100%" : "40%"} data-aos="fade-right">
                 <Pane display="flex" alignItems="center" marginBottom="2.5em">
                     <Avatar
                         src={Logo}
@@ -91,6 +91,7 @@ function About() {
                 borderBottomLeftRadius={50}
                 overflow="hidden"
                 display={mobile ? "none" : ""}
+                data-aos="fade-left"
             >
                 <img src={Classroom} />
             </Pane>

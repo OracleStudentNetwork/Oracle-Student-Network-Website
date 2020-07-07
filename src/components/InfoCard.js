@@ -36,6 +36,7 @@ function InfoCard(props) {
             justifyContent="space-evenly"
             margin={32}
             flexDirection={mobile ? "column" : "row"}
+            data-aos="fade-up"
         >
             {card}
         </Pane>
