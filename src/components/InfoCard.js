@@ -16,7 +16,7 @@ function InfoCard(props) {
             <Paragraph
                 size={600}
                 marginTop="1em"
-                textAlign={props.reverse ? "right" : "left"}
+                textAlign="justify"
                 fontSize="18px"
             >
                 {props.content}

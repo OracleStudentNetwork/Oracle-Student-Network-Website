@@ -6,7 +6,7 @@ class Navbar extends React.Component {
         // TODO
         // Add footer to fix anchor scrolling
         return (
-            <nav>
+            <nav height="5vh">
                 <ul className="navbar-links">
                     <Heading size={this.props.mobile ? 500 : 600}>
                         <li>

@@ -48,6 +48,7 @@ class Contact extends React.Component {
                 textAlign="center"
                 display="flex"
                 flexDirection="column"
+                height="100vh"
             >
                 <Pane>
                     <Heading

@@ -8,19 +8,19 @@ function Hero() {
     return (
         <Pane
             display="flex"
-            padding={20}
+            paddingBottom="10vh"
             justifyContent="center"
-            marginTop="5em"
+            height="95vh"
             flexDirection={mobile ? "column" : "row"}
         >
             <Pane
                 display="flex"
                 flexDirection="column"
                 justifyContent="center"
+                alignItems="center"
                 width={mobile ? "100%" : ""}
             >
                 <Pane textAlign={mobile ? "center" : ""}>
-                    {/* <img src={Logo} width="57" height="51" verticalAlign="middle" /> */}
                     <Heading
                         size={900}
                         fontSize="48px"
@@ -49,8 +49,14 @@ function Hero() {
                 display={mobile ? "none" : "flex"}
                 justifyContent="center"
                 marginLeft="5%"
+                alignItems="center"
             >
-                <img src={HeroImage} className="hero-image" />
+                <img
+                    src={HeroImage}
+                    height="442px"
+                    width="auto"
+                    className="hero-image"
+                />
             </Pane>
         </Pane>
     );

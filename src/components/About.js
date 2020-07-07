@@ -15,7 +15,6 @@ function About() {
     const mobile = useMediaQuery({ query: "(max-width: 680px)" });
     return (
         <Pane
-            marginTop="15em"
             paddingTop="12vh"
             paddingBottom="12vh"
             paddingRight={mobile ? "15vw" : ""}
@@ -25,6 +24,7 @@ function About() {
             flexDirection={mobile ? "column" : "row"}
             justifyContent="space-between"
             alignItems="center"
+            height="100vh"
         >
             <Pane width={mobile ? "100%" : "40%"}>
                 <Pane display="flex" alignItems="center" marginBottom="2.5em">
