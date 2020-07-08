@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import Info from "./components/Info";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import AOS from "aos";
 import Config from "./components/Config";
 import Firebase from "firebase";
@@ -41,6 +42,7 @@ function App() {
                     <Contact mobile={mobile} />
                 </div>
             </ScrollableAnchor>
+            <Footer mobile={mobile} />
         </Pane>
     );
 }
