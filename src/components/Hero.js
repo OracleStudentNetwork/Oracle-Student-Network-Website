@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/hero.png";
+import HeroImage from "../assets/hero.svg";
 import { useMediaQuery } from "react-responsive";
 import { Pane, Heading, Button } from "evergreen-ui";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Classroom from "../assets/classroom.jpg";
+import Classroom from "../assets/classroom.svg";
 import Logo from "../assets/logo.png";
 import { useMediaQuery } from "react-responsive";
 import {
