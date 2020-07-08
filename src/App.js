@@ -9,6 +9,8 @@ import Info from "./components/Info";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import AOS from "aos";
+import Config from "./components/Config";
+import Firebase from "firebase";
 import "aos/dist/aos.css";
 AOS.init({
     offset: 400,
@@ -17,6 +19,8 @@ AOS.init({
 });
 
 function App() {
+    if (!Firebase.apps.length) Firebase.initializeApp(Config);
+    Firebase.analytics();
     const mobile = useMediaQuery({ query: "(max-width: 680px)" });
     return (
         <Pane>

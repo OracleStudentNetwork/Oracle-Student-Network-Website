@@ -6,6 +6,7 @@ const Config = {
     storageBucket: "oracle-student-network.appspot.com",
     messagingSenderId: "710111606862",
     appId: "1:710111606862:web:bfc1a2a693e4023d8d2b1f",
+    measurementId: "G-ZW8YW07C9R",
 };
 
 export default Config;

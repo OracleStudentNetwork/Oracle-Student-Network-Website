@@ -10,7 +10,10 @@ class Contact extends React.Component {
             email: "",
             lastSubmission: Date.now() - 5000,
         };
-        if (!Firebase.apps.length) Firebase.initializeApp(Config);
+        if (!Firebase.apps.length) {
+            Firebase.initializeApp(Config);
+            Firebase.analytics();
+        }
         this.updateEmail = this.updateEmail.bind(this);
         this.writeToDataBase = this.writeToDataBase.bind(this);
     }
@@ -27,6 +30,7 @@ class Contact extends React.Component {
             return;
         }
         Firebase.database().ref("/").push(this.state.email);
+        Firebase.analytics().logEvent("sign_up");
         this.setState(
             {
                 email: "",
