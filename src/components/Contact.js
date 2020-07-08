@@ -40,9 +40,8 @@ class Contact extends React.Component {
     render() {
         return (
             <Pane
-                background="#333"
+                background="#121212"
                 paddingTop="15vh"
-                paddingBottom="15vh"
                 paddingRight="15vw"
                 paddingLeft="15vw"
                 textAlign="center"
@@ -53,22 +52,21 @@ class Contact extends React.Component {
                 <Pane>
                     <Heading
                         size={900}
-                        fontSize="48px"
+                        fontSize={this.props.mobile ? "32px" : "48px"}
                         textAlign="center"
                         color="white"
                     >
                         So What Are You Waiting For?
                     </Heading>
                 </Pane>
-                <Pane
-                    display="flex"
-                    flexDirection={this.props.mobile ? "column" : "row"}
-                    marginTop="4em"
-                    justifyContent="space-evenly"
-                >
-                    <Pane textAlign={this.props.mobile ? "center" : "left"}>
-                        <Heading size={900} color="white" marginTop="1em">
-                            Sign up for our mailing list
+                <Pane display="flex" flexDirection="column" marginTop="3vh">
+                    <Pane textAlign="center">
+                        <Heading
+                            size={this.props.mobile ? 600 : 900}
+                            color="white"
+                            marginTop="1em"
+                        >
+                            Join our mailing list
                         </Heading>
                         <TextInput
                             width="60%"
@@ -76,7 +74,8 @@ class Contact extends React.Component {
                             value={this.state.email}
                             onChange={this.updateEmail}
                             placeholder="someone@example.com"
-                            marginTop="2em"
+                            marginTop="5vh"
+                            height={48}
                         />
                         <Button
                             iconAfter="envelope"
@@ -84,18 +83,19 @@ class Contact extends React.Component {
                             intent="success"
                             marginLeft="1em"
                             onClick={this.writeToDataBase}
+                            height={48}
                         >
                             Sign Up
                         </Button>
                     </Pane>
-                    <Pane marginTop={this.props.mobile ? "1em" : ""}>
-                        <iframe
+                    <Pane marginTop="2em">
+                        {/* <iframe
                             src="https://discordapp.com/widget?id=726625462083649637&theme=dark"
                             width={this.props.mobile ? "250" : "350"}
-                            height="500"
+                            height="auto"
                             allowtransparency="true"
                             frameborder="0"
-                        ></iframe>
+                        ></iframe> */}
                     </Pane>
                 </Pane>
             </Pane>

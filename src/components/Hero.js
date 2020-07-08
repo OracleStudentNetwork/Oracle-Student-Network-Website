@@ -11,6 +11,8 @@ function Hero() {
             paddingBottom="10vh"
             justifyContent="center"
             height="95vh"
+            paddingRight="10vw"
+            paddingLeft="10vw"
             flexDirection={mobile ? "column" : "row"}
         >
             <Pane
@@ -48,7 +50,7 @@ function Hero() {
             <Pane
                 display={mobile ? "none" : "flex"}
                 justifyContent="center"
-                marginLeft="5%"
+                marginLeft="10vw"
                 alignItems="center"
             >
                 <img

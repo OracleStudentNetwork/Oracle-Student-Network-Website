@@ -11,6 +11,8 @@ function Info() {
             background="#e8e9f1"
             paddingTop="15vh"
             paddingBottom="5em"
+            paddingRight="10vw"
+            paddingLeft="10vw"
         >
             <InfoCard
                 title="Title"

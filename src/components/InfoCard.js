@@ -16,7 +16,7 @@ function InfoCard(props) {
             <Paragraph
                 size={600}
                 marginTop="1em"
-                textAlign="justify"
+                textAlign={props.reverse ? "right" : "left"}
                 fontSize="18px"
             >
                 {props.content}
@@ -34,7 +34,7 @@ function InfoCard(props) {
         <Pane
             display="flex"
             justifyContent="space-evenly"
-            margin={32}
+            marginBottom="5vh"
             flexDirection={mobile ? "column" : "row"}
             data-aos="fade-up"
         >

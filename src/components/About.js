@@ -17,14 +17,13 @@ function About() {
         <Pane
             paddingTop="12vh"
             paddingBottom="12vh"
-            paddingRight={mobile ? "15vw" : ""}
-            paddingLeft="15vw"
+            paddingRight={mobile ? "10vw" : ""}
+            paddingLeft="10vw"
             background="#7050c2"
             display="flex"
             flexDirection={mobile ? "column" : "row"}
             justifyContent="space-between"
             alignItems="center"
-            height="100vh"
         >
             <Pane width={mobile ? "100%" : "40%"} data-aos="fade-right">
                 <Pane display="flex" alignItems="center" marginBottom="2.5em">
