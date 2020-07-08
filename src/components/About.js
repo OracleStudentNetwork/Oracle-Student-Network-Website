@@ -90,7 +90,6 @@ function About() {
                 borderBottomLeftRadius={50}
                 overflow="hidden"
                 display={mobile ? "none" : ""}
-                data-aos="fade-left"
             >
                 <img src={Classroom} />
             </Pane>

@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init({
+    offset: 400,
     once: true,
     delay: 200,
 });
