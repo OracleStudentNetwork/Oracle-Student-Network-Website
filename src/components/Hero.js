@@ -58,6 +58,7 @@ function Hero() {
                     height="442px"
                     width="auto"
                     className="hero-image"
+                    alt="Hero Image"
                 />
             </Pane>
         </Pane>

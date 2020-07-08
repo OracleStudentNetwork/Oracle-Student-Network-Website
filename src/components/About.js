@@ -91,7 +91,7 @@ function About() {
                 overflow="hidden"
                 display={mobile ? "none" : ""}
             >
-                <img src={Classroom} />
+                <img src={Classroom} alt="Classroom" />
             </Pane>
         </Pane>
     );
