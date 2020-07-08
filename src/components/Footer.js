@@ -54,7 +54,7 @@ class Footer extends React.Component {
                     display="flex"
                     flexDirection={this.props.mobile ? "column" : "row"}
                     justifyContent="space-around"
-                    marginTop="10vh"
+                    marginTop="5vh"
                 >
                     <Pane textAlign="center" flexGrow="1">
                         <Heading
@@ -146,6 +146,7 @@ class Footer extends React.Component {
                             justifyContent="center"
                         >
                             <TextInput
+                                width="50%"
                                 name="email"
                                 value={this.state.email}
                                 onChange={this.updateEmail}
