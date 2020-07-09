@@ -44,8 +44,8 @@ class Footer extends React.Component {
     render() {
         return (
             <Pane
-                paddingRight="15vw"
-                paddingLeft="15vw"
+                paddingRight="5vw"
+                paddingLeft="5vw"
                 background="#121212"
                 minHeight="60vh"
             >

@@ -11,8 +11,8 @@ import {
     ListItem,
 } from "evergreen-ui";
 
-function About() {
-    const mobile = useMediaQuery({ query: "(max-width: 680px)" });
+function About(props) {
+    const mobile = props.mobile;
     return (
         <Pane
             paddingTop="12vh"
@@ -22,10 +22,14 @@ function About() {
             background="#7050c2"
             display="flex"
             flexDirection={mobile ? "column" : "row"}
-            justifyContent="space-between"
+            justifyContent="center"
             alignItems="center"
         >
-            <Pane width={mobile ? "100%" : "40%"} data-aos="fade-right">
+            <Pane
+                width={mobile ? "100%" : "40%"}
+                data-aos="fade-right"
+                minWidth="30vw"
+            >
                 <Pane display="flex" alignItems="center" marginBottom="2.5em">
                     <Avatar
                         src={Logo}

@@ -22,14 +22,14 @@ AOS.init({
 function App() {
     if (!Firebase.apps.length) Firebase.initializeApp(Config);
     Firebase.analytics();
-    const mobile = useMediaQuery({ query: "(max-width: 680px)" });
+    const mobile = useMediaQuery({ query: "(max-width: 800px)" });
     return (
         <Pane>
             <Navbar mobile={mobile} />
             <Hero />
             <ScrollableAnchor id={"info"}>
                 <div>
-                    <About />
+                    <About mobile={mobile} />
                 </div>
             </ScrollableAnchor>
             <ScrollableAnchor id={"about"}>
