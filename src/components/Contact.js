@@ -27,15 +27,17 @@ class Contact extends React.Component {
                     >
                         So What Are You Waiting For?
                     </Heading>
-                    <Button
-                        marginTop="5vh"
-                        iconAfter="arrow-right"
-                        appearance="primary"
-                        intent="success"
-                        height={48}
-                    >
-                        Join our Discord
-                    </Button>
+                    <a href="https://google.com" rel="noopener" target="_blank">
+                        <Button
+                            marginTop="5vh"
+                            iconAfter="arrow-right"
+                            appearance="primary"
+                            intent="success"
+                            height={48}
+                        >
+                            Join our Discord
+                        </Button>
+                    </a>
                 </Pane>
             </Pane>
         );

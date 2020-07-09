@@ -34,17 +34,19 @@ function Hero() {
                     <Heading size={800} marginTop="0.5em">
                         Slogan Here
                     </Heading>
-                    <Button
-                        iconAfter="arrow-right"
-                        appearance="primary"
-                        marginTop="2em"
-                        height={40}
-                    >
-                        <Pane marginRight={10}>
-                            <i className="fab fa-discord fa-lg"></i>
-                        </Pane>
-                        Join our Discord
-                    </Button>
+                    <a href="https://google.com" rel="noopener" target="_blank">
+                        <Button
+                            iconAfter="arrow-right"
+                            appearance="primary"
+                            marginTop="2em"
+                            height={40}
+                        >
+                            <Pane marginRight={10}>
+                                <i className="fab fa-discord fa-lg"></i>
+                            </Pane>
+                            Join our Discord
+                        </Button>
+                    </a>
                 </Pane>
             </Pane>
             <Pane

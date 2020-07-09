@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -32,7 +36,6 @@ nav {
 }
 
 .navbar-links a {
-    text-decoration: none;
     margin: 3vw;
     color: #6845c2;
 }
