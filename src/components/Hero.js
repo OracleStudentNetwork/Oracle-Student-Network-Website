@@ -47,6 +47,21 @@ function Hero() {
                             Join our Discord
                         </Button>
                     </a>
+                    <a
+                        href="https://discord.com/new"
+                        rel="noopener"
+                        target="_blank"
+                    >
+                        <Button
+                            iconBefore="info-sign"
+                            appearance="default"
+                            marginTop="2em"
+                            marginLeft={mobile ? "" : "1em"}
+                            height={40}
+                        >
+                            What is Discord?
+                        </Button>
+                    </a>
                 </Pane>
             </Pane>
             <Pane
