@@ -46,12 +46,14 @@ function About(props) {
                         Who Are We?
                     </Heading>
                 </Pane>
-                <Text size={mobile ? 500 : 600} color="white">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                    natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                    eu, pretium quis, sem. Nulla consequat massa quis enim.
+                <Text size={500} color="white">
+                    We host a variety of workshops and community activities each
+                    week, with tutoring and homework help offered at select
+                    times every single day. Our platform is a heavily modified
+                    messaging chatroom and allows students to effectively and
+                    anonymously access our services. In fact, we are the first
+                    non-profit group in North America to offer tutoring through
+                    the convenience of a messaging platform.
                 </Text>
                 <UnorderedList
                     icon="tick-circle"
@@ -60,21 +62,22 @@ function About(props) {
                     marginTop="3em"
                 >
                     <ListItem color="white">
-                        <Heading size={700} color="white">
-                            Promise 1
+                        <Heading size={700} color="#00d7d2">
+                            Live Virtual Tutoring
                         </Heading>
                         <Text color="white" size={500}>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit. Aenean commodo ligula eget dolor.
+                            Log on to Oracle to receive on-demand homework help
+                            and concept clarification, completely free!
                         </Text>
                     </ListItem>
                     <ListItem color="white">
-                        <Heading size={700} color="white" marginTop="1em">
-                            Promise 2
+                        <Heading size={700} color="#00d7d2" marginTop="1em">
+                            Community Events
                         </Heading>
                         <Text color="white" size={500}>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit. Aenean commodo ligula eget dolor.
+                            Socialize, share memes, stream music, participate in
+                            weekly gift card raffles. It’s important to leave
+                            time to relax.
                         </Text>
                     </ListItem>
                     <ListItem color="white">
@@ -84,8 +87,8 @@ function About(props) {
                             alignItems="center"
                             marginTop="1em"
                         >
-                            <Heading size={700} color="white">
-                                Promise 3
+                            <Heading size={700} color="#00d7d2">
+                                Workshops
                             </Heading>
                             <Badge
                                 color="blue"
@@ -98,8 +101,9 @@ function About(props) {
                         </Pane>
 
                         <Text color="white" size={500}>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit. Aenean commodo ligula eget dolor.
+                            Oracle will host daily workshops on extracurricular
+                            topics lead by talented and motivated youth
+                            instructors.
                         </Text>
                     </ListItem>
                 </UnorderedList>

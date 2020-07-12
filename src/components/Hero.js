@@ -29,10 +29,10 @@ function Hero() {
                         verticalAlign="middle"
                         color="#6845c2"
                     >
-                        Oracle Student Network
+                        Oracle Tutoring
                     </Heading>
-                    <Heading size={800} marginTop="0.5em">
-                        Slogan Here
+                    <Heading size={700} marginTop="0.5em">
+                        Getting help with homework has never been so easy.
                     </Heading>
                     <a href="https://google.com" rel="noopener" target="_blank">
                         <Button
