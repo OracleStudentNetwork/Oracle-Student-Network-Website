@@ -46,7 +46,7 @@ class Footer extends React.Component {
             <Pane
                 paddingRight="5vw"
                 paddingLeft="5vw"
-                background="#333"
+                background="#222"
                 minHeight="60vh"
             >
                 <hr></hr>
@@ -54,7 +54,6 @@ class Footer extends React.Component {
                     display="flex"
                     flexDirection={this.props.mobile ? "column" : "row"}
                     justifyContent="space-around"
-                    marginTop="5vh"
                 >
                     <Pane textAlign="center" flexGrow="1">
                         <Heading
