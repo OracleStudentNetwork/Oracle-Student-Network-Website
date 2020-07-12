@@ -1,7 +1,6 @@
 import React from "react";
 import Classroom from "../assets/classroom.svg";
 import Logo from "../assets/logo.png";
-import { useMediaQuery } from "react-responsive";
 import {
     Pane,
     Heading,
@@ -9,6 +8,7 @@ import {
     Avatar,
     UnorderedList,
     ListItem,
+    Badge,
 } from "evergreen-ui";
 
 function About(props) {
@@ -78,9 +78,25 @@ function About(props) {
                         </Text>
                     </ListItem>
                     <ListItem color="white">
-                        <Heading size={700} color="white" marginTop="1em">
-                            Promise 3
-                        </Heading>
+                        <Pane
+                            display="flex"
+                            flexDirection="row"
+                            alignItems="center"
+                            marginTop="1em"
+                        >
+                            <Heading size={700} color="white">
+                                Promise 3
+                            </Heading>
+                            <Badge
+                                color="blue"
+                                marginLeft="10px"
+                                marginTop="6px"
+                                isSolid
+                            >
+                                Coming Soon
+                            </Badge>
+                        </Pane>
+
                         <Text color="white" size={500}>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit. Aenean commodo ligula eget dolor.

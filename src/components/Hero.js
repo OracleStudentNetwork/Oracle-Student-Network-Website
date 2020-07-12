@@ -48,7 +48,7 @@ function Hero() {
                         </Button>
                     </a>
                     <a
-                        href="https://discord.com/new"
+                        href="https://discord.com/why-discord-is-different"
                         rel="noopener"
                         target="_blank"
                     >
