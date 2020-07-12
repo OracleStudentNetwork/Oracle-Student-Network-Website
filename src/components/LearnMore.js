@@ -3,7 +3,7 @@ import { Pane } from "evergreen-ui";
 import InfoCard from "./InfoCard";
 import Logo from "../assets/logo.png";
 
-function Info() {
+function LearnMore() {
     return (
         <Pane
             display="flex"
@@ -39,4 +39,4 @@ function Info() {
     );
 }
 
-export default Info;
+export default LearnMore;

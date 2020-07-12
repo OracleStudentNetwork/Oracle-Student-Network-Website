@@ -11,7 +11,7 @@ import {
     Badge,
 } from "evergreen-ui";
 
-function About(props) {
+function Services(props) {
     const mobile = props.mobile;
     return (
         <Pane
@@ -43,7 +43,7 @@ function About(props) {
                         textAlign="left"
                         verticalAlign="text-top"
                     >
-                        Who Are We?
+                        What We Do
                     </Heading>
                 </Pane>
                 <Text size={500} color="white">
@@ -121,4 +121,4 @@ function About(props) {
     );
 }
 
-export default About;
+export default Services;

@@ -1,21 +1,19 @@
 import React from "react";
-import { Pane, Heading } from "evergreen-ui";
+import { Heading } from "evergreen-ui";
 
 class Navbar extends React.Component {
     render() {
-        // TODO
-        // Add footer to fix anchor scrolling
         return (
             <nav height="5vh">
                 <ul className="navbar-links">
                     <Heading size={this.props.mobile ? 500 : 600}>
                         <li>
-                            <a href="#info">Our Mission</a>
+                            <a href="#info">What We Do</a>
                         </li>
                     </Heading>
                     <Heading size={this.props.mobile ? 500 : 600}>
                         <li>
-                            <a href="#about">About Us</a>
+                            <a href="#about">Learn More</a>
                         </li>
                     </Heading>
                     <Heading size={this.props.mobile ? 500 : 600}>
