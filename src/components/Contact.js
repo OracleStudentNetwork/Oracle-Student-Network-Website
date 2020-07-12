@@ -43,24 +43,28 @@ class Contact extends React.Component {
                     </a>
                 </Pane>
                 <Pane display="flex" marginTop="2em" justifyContent="center">
-                    <a
-                        href="https://apps.apple.com/us/app/discord-chat-for-games/id985746746"
-                        rel="noopener"
-                        target="_blank"
-                    >
-                        <img src={Appstore}></img>
-                    </a>
-                    <a
-                        href="https://play.google.com/store/apps/details?id=com.discord&hl=en_CA&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-                        rel="noopener"
-                        target="_blank"
-                    >
-                        <img
-                            height="40px"
-                            alt="Get it on Google Play"
-                            src={Playstore}
-                        />
-                    </a>
+                    <Pane margin={10}>
+                        <a
+                            href="https://apps.apple.com/us/app/discord-chat-for-games/id985746746"
+                            rel="noopener"
+                            target="_blank"
+                        >
+                            <img src={Appstore}></img>
+                        </a>
+                    </Pane>
+                    <Pane margin={10}>
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.discord&hl=en_CA&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                            rel="noopener"
+                            target="_blank"
+                        >
+                            <img
+                                height="40px"
+                                alt="Get it on Google Play"
+                                src={Playstore}
+                            />
+                        </a>
+                    </Pane>
                 </Pane>
                 <Pane>
                     <Paragraph color="white">

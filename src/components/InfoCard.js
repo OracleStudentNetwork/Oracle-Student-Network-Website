@@ -24,7 +24,7 @@ function InfoCard(props) {
         </Pane>
     );
     const img = (
-        <Pane elevation={2} borderRadius={5} border>
+        <Pane borderRadius={5} border>
             <img src={props.img} alt={props.alt} width="250px" />
         </Pane>
     );
