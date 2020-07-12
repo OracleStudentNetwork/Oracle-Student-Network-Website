@@ -8,7 +8,7 @@ class Contact extends React.Component {
     render() {
         return (
             <Pane
-                background="#121212"
+                background="#333"
                 paddingTop="15vh"
                 paddingRight="15vw"
                 paddingLeft="15vw"

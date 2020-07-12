@@ -1,7 +1,9 @@
 import React from "react";
 import { Pane } from "evergreen-ui";
 import InfoCard from "./InfoCard";
-import Logo from "../assets/logo.png";
+import Vault from "../assets/vault.svg";
+import Terms from "../assets/terms.svg";
+import Team from "../assets/team.svg";
 
 function LearnMore() {
     return (
@@ -15,23 +17,23 @@ function LearnMore() {
             paddingLeft="10vw"
         >
             <InfoCard
-                title="Title"
-                content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. "
-                img={Logo}
+                title="Become a Volunteer Scholar or team member"
+                content="Are you a secondary or post-secondary student interested in helping students across North America succeed during distance learning? Volunteer hours will be provided if requested. We are also looking for workshop leaders, platform moderators, and python developers comfortable with using Discord’s API. Express interest to join us in this form."
+                img={Team}
                 alt="placeholder"
                 reverse={false}
             />
             <InfoCard
-                title="Title"
-                content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. "
-                img={Logo}
+                title="Content Policy"
+                content="We want to ensure students follow all required policies related to academic honesty and plagiarism. Our volunteer scholars are instructed to not just answer questions, but rather guide a student’s thinking in the right direction. Help for essays or other written works only consist of suggestions made during the brainstorming or peer editing process. View our full content policy here."
+                img={Terms}
                 alt="placeholder"
                 reverse={true}
             />
             <InfoCard
-                title="Title"
-                content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. "
-                img={Logo}
+                title="Donate"
+                content="Oracle Tutoring offers all its services completely free of charge. We rely on donations, grants, and partnerships to sustain our operations. If you would like to help us continue to provide educational aids and workshops to students, we are accepting donations through PayPal."
+                img={Vault}
                 alt="placeholder"
                 reverse={false}
             />

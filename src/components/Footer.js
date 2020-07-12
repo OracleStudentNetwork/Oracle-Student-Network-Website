@@ -46,7 +46,7 @@ class Footer extends React.Component {
             <Pane
                 paddingRight="5vw"
                 paddingLeft="5vw"
-                background="#121212"
+                background="#333"
                 minHeight="60vh"
             >
                 <hr></hr>
