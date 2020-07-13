@@ -79,7 +79,7 @@ class Footer extends React.Component {
                         </Heading>
                         <Pane display="flex" justifyContent="space-evenly">
                             <a
-                                href="https://www.instagram.com/"
+                                href="https://www.instagram.com/oracletutoring/"
                                 rel="noopener"
                                 target="_blank"
                             >
@@ -115,16 +115,6 @@ class Footer extends React.Component {
                             >
                                 <i
                                     class="fab fa-linkedin fa-2x"
-                                    style={{ color: "white" }}
-                                ></i>
-                            </a>
-                            <a
-                                href="https://www.github.com/"
-                                rel="noopener"
-                                target="_blank"
-                            >
-                                <i
-                                    class="fab fa-github fa-2x"
                                     style={{ color: "white" }}
                                 ></i>
                             </a>
