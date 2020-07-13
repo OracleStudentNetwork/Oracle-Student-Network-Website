@@ -1,7 +1,8 @@
 import React from "react";
-import { Pane, Heading, Button, Text, Paragraph } from "evergreen-ui";
+import { Pane, Paragraph, toaster, Heading } from "evergreen-ui";
 import Appstore from "../assets/appstore.svg";
 import Playstore from "../assets/playstore.png";
+import Signup from "./Signup";
 
 class Contact extends React.Component {
     constructor(props) {
@@ -22,7 +23,13 @@ class Contact extends React.Component {
                 justifyContent="space-between"
             >
                 <Pane>
-                    <Heading
+                    <Pane textAlign="center" flexGrow="1">
+                        <Heading color="white" size={900} marginBottom="5vh">
+                            Sign up for our closed-beta!
+                        </Heading>
+                        <Signup alignment="center" />
+                    </Pane>
+                    {/* <Heading
                         size={900}
                         fontSize={this.props.mobile ? "32px" : "48px"}
                         textAlign="center"
@@ -40,7 +47,7 @@ class Contact extends React.Component {
                         >
                             Join our Discord
                         </Button>
-                    </a>
+                    </a> */}
                 </Pane>
                 <Pane display="flex" marginTop="2em" justifyContent="center">
                     <Pane margin={10}>

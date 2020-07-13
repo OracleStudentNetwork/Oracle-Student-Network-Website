@@ -1,45 +1,9 @@
 import React from "react";
-import { Pane, Heading, TextInput, Button, toaster, Text } from "evergreen-ui";
-import Config from "./Config";
-import Firebase from "firebase";
+import { Pane, Heading, Text } from "evergreen-ui";
 
 class Footer extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            email: "",
-            lastSubmission: Date.now() - 5000,
-        };
-        if (!Firebase.apps.length) {
-            Firebase.initializeApp(Config);
-            Firebase.analytics();
-        }
-        this.updateEmail = this.updateEmail.bind(this);
-        this.writeToDataBase = this.writeToDataBase.bind(this);
-    }
-    updateEmail(event) {
-        const { name, value } = event.target;
-        this.setState({
-            [name]: value,
-        });
-    }
-    writeToDataBase() {
-        const timeElapsed = (Date.now() - this.state.lastSubmission) / 1000;
-        if (timeElapsed < 5) {
-            toaster.warning("You can only only sign up once every 5 seconds");
-            return;
-        }
-        Firebase.database().ref("/").push(this.state.email);
-        Firebase.analytics().logEvent("sign_up");
-        this.setState(
-            {
-                email: "",
-                lastSubmission: Date.now(),
-            },
-            () => {
-                toaster.success("Sign up successful!");
-            }
-        );
     }
     render() {
         return (
@@ -120,7 +84,7 @@ class Footer extends React.Component {
                             </a>
                         </Pane>
                     </Pane>
-                    <Pane textAlign="center" flexGrow="1">
+                    {/* <Pane textAlign="center" flexGrow="1">
                         <Heading
                             size={700}
                             color="white"
@@ -152,7 +116,7 @@ class Footer extends React.Component {
                                 Sign Up
                             </Button>
                         </Pane>
-                    </Pane>
+                    </Pane> */}
                     <Pane marginTop="2em">
                         {/* <iframe
                             src="https://discordapp.com/widget?id=726625462083649637&theme=dark"

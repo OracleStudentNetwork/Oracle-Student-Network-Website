@@ -3,6 +3,7 @@ import { Pane, Heading, Text, Paragraph } from "evergreen-ui";
 
 class Mission extends React.Component {
     render() {
+        const mobile = this.props.mobile;
         return (
             <Pane
                 textAlign="center"
@@ -18,7 +19,7 @@ class Mission extends React.Component {
                 <Pane marginTop="4vh">
                     <Paragraph
                         size={500}
-                        fontSize="20px"
+                        fontSize={mobile ? "18px" : "20px"}
                         color="#6845c2"
                         lineHeight="150%"
                         color="#5b6987"

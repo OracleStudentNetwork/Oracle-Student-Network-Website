@@ -10,6 +10,7 @@
     "evergreen-ui": "^4.28.0",
     "firebase": "^7.15.5",
     "react": "^16.13.1",
+    "react-countdown": "^2.2.1",
     "react-dom": "^16.13.1",
     "react-responsive": "^8.1.0",
     "react-scripts": "3.4.1",
