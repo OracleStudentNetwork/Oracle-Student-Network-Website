@@ -5,8 +5,9 @@ import { useMediaQuery } from "react-responsive";
 import ScrollableAnchor from "react-scrollable-anchor";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Info from "./components/LearnMore";
+import Mission from "./components/Mission";
 import Services from "./components/Services";
+import LearnMore from "./components/LearnMore";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AOS from "aos";
@@ -27,14 +28,15 @@ function App() {
         <Pane>
             <Navbar mobile={mobile} />
             <Hero />
-            <ScrollableAnchor id={"info"}>
+            <Mission />
+            <ScrollableAnchor id={"services"}>
                 <div>
                     <Services mobile={mobile} />
                 </div>
             </ScrollableAnchor>
-            <ScrollableAnchor id={"about"}>
+            <ScrollableAnchor id={"learn-more"}>
                 <div>
-                    <Info />
+                    <LearnMore />
                 </div>
             </ScrollableAnchor>
             <ScrollableAnchor id={"contact"}>

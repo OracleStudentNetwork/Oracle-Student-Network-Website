@@ -8,12 +8,12 @@ class Navbar extends React.Component {
                 <ul className="navbar-links">
                     <Heading size={this.props.mobile ? 500 : 600}>
                         <li>
-                            <a href="#info">What We Do</a>
+                            <a href="#services">What We Do</a>
                         </li>
                     </Heading>
                     <Heading size={this.props.mobile ? 500 : 600}>
                         <li>
-                            <a href="#about">Learn More</a>
+                            <a href="#learn-more">Learn More</a>
                         </li>
                     </Heading>
                     <Heading size={this.props.mobile ? 500 : 600}>

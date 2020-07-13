@@ -9,6 +9,7 @@ import {
     UnorderedList,
     ListItem,
     Badge,
+    Paragraph,
 } from "evergreen-ui";
 
 function Services(props) {
@@ -46,7 +47,7 @@ function Services(props) {
                         What We Do
                     </Heading>
                 </Pane>
-                <Text size={500} color="white">
+                <Paragraph size={500} color="white">
                     We host a variety of workshops and community activities each
                     week, with tutoring and homework help offered at select
                     times every single day. Our platform is a heavily modified
@@ -54,7 +55,7 @@ function Services(props) {
                     anonymously access our services. In fact, we are the first
                     non-profit group in North America to offer tutoring through
                     the convenience of a messaging platform.
-                </Text>
+                </Paragraph>
                 <UnorderedList
                     icon="tick-circle"
                     iconColor="success"
