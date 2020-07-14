@@ -63,6 +63,7 @@ class Signup extends React.Component {
                         intent="success"
                         onClick={this.writeToDataBase}
                         height={38}
+                        marginLeft="10px"
                     >
                         Sign Up
                     </Button>

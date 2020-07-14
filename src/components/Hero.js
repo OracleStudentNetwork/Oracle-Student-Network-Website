@@ -1,6 +1,6 @@
 import React from "react";
 import HeroImage from "../assets/hero.svg";
-import { Pane, Heading, Button } from "evergreen-ui";
+import { Pane, Heading, Button, Text } from "evergreen-ui";
 import Countdown from "react-countdown";
 import Signup from "./Signup";
 
@@ -40,60 +40,67 @@ class Hero extends React.Component {
                         <Heading size={mobile ? 500 : 700} marginTop="0.5em">
                             Getting help with homework has never been so easy.
                         </Heading>
-                        <Heading
-                            size={mobile ? 500 : 700}
-                            marginTop="4vh"
-                            textAlign="center"
-                        >
-                            Sign up for our closed-beta, available in
-                        </Heading>
-                        <Heading
-                            size={900}
-                            fontSize={mobile ? "42px" : "80px"}
-                            lineHeight="100%"
-                            textAlign="center"
-                        >
-                            <span style={{ color: "#6845c2" }}>
-                                <Countdown date={1594839600000} />
-                            </span>
-                        </Heading>
-                        <Pane marginTop="1vh">
-                            <Signup alignment="center" />
-                        </Pane>
-                        <Pane textAlign="center">
-                            <a
-                                href="https://discord.com/new"
-                                rel="noopener"
-                                target="_blank"
+                        <Pane marginTop="6vh">
+                            <Heading
+                                size={mobile ? 500 : 700}
+                                textAlign={mobile ? "center" : "left"}
                             >
-                                <Button
-                                    iconAfter="arrow-right"
-                                    appearance="primary"
-                                    marginTop="2em"
-                                    height={40}
-                                    disabled
-                                >
-                                    <Pane marginRight={10}>
-                                        <i className="fab fa-discord fa-lg"></i>
-                                    </Pane>
-                                    Join our Discord
-                                </Button>
-                            </a>
-                            <a
-                                href="https://discord.com/why-discord-is-different"
-                                rel="noopener"
-                                target="_blank"
+                                Sign up for our closed-beta, available in
+                            </Heading>
+                            <Heading
+                                size={900}
+                                fontSize={mobile ? "42px" : "80px"}
+                                lineHeight="100%"
+                                textAlign={mobile ? "center" : "left"}
                             >
-                                <Button
-                                    iconBefore="info-sign"
-                                    appearance="default"
-                                    marginTop="2em"
-                                    marginLeft={mobile ? "" : "1em"}
-                                    height={40}
+                                <span style={{ color: "#6845c2" }}>
+                                    <Countdown date={1594839600000} />
+                                </span>
+                            </Heading>
+                            <Pane>
+                                <Pane marginTop="1vh">
+                                    <Signup
+                                        alignment={mobile ? "center" : "left"}
+                                    />
+                                </Pane>
+                                <Pane
+                                    display="flex"
+                                    marginTop="2vh"
+                                    width="100%"
                                 >
-                                    What is Discord?
-                                </Button>
-                            </a>
+                                    <a
+                                        href="https://discord.com/new"
+                                        rel="noopener"
+                                        target="_blank"
+                                    >
+                                        <Button
+                                            iconAfter="arrow-right"
+                                            appearance="primary"
+                                            height={40}
+                                            disabled
+                                        >
+                                            <Pane marginRight={10}>
+                                                <i className="fab fa-discord fa-lg"></i>
+                                            </Pane>
+                                            Join our Discord
+                                        </Button>
+                                    </a>
+                                    <a
+                                        href="https://discord.com/why-discord-is-different"
+                                        rel="noopener"
+                                        target="_blank"
+                                    >
+                                        <Button
+                                            iconBefore="info-sign"
+                                            appearance="default"
+                                            marginLeft={mobile ? "" : "1em"}
+                                            height={40}
+                                        >
+                                            What is Discord?
+                                        </Button>
+                                    </a>
+                                </Pane>
+                            </Pane>
                         </Pane>
                     </Pane>
                 </Pane>
