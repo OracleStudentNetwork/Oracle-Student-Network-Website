@@ -48,13 +48,9 @@ function Services(props) {
                     </Heading>
                 </Pane>
                 <Paragraph size={500} color="white">
-                    We host a variety of workshops and community activities each
-                    week, with tutoring and homework help offered at select
-                    times every single day. Our platform is a heavily modified
-                    messaging chatroom and allows students to effectively and
-                    anonymously access our services. In fact, we are the first
-                    non-profit group in North America to offer tutoring through
-                    the convenience of a messaging platform.
+                    Tutoring and homework help is offered at select times every single day. 
+                    We also host workshops, raffles, amd community events each week. 
+                    Oracle is proud to be the first non-profit group to offer on-demand tutoring through the convenience of a messaging platform.
                 </Paragraph>
                 <UnorderedList
                     icon="tick-circle"
