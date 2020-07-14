@@ -48,11 +48,12 @@ class Footer extends React.Component {
                         >
                             Connect with us
                         </Heading>
-                        <Pane display="flex" justifyContent="space-evenly">
+                        <Pane display="flex" justifyContent="center">
                             <a
                                 href="https://www.instagram.com/oracletutoring/"
                                 rel="noopener"
                                 target="_blank"
+                                className="social-logos"
                             >
                                 <i
                                     class="fab fa-instagram fa-2x"
@@ -63,6 +64,7 @@ class Footer extends React.Component {
                                 href="https://discord.com/new"
                                 rel="noopener"
                                 target="_blank"
+                                className="social-logos"
                             >
                                 <i
                                     class="fab fa-discord fa-2x"
@@ -73,6 +75,7 @@ class Footer extends React.Component {
                                 href="https://www.facebook.com/"
                                 rel="noopener"
                                 target="_blank"
+                                className="social-logos"
                             >
                                 <i
                                     class="fab fa-facebook-square fa-2x"
@@ -83,6 +86,7 @@ class Footer extends React.Component {
                                 href="https://www.linkedin.com/"
                                 rel="noopener"
                                 target="_blank"
+                                className="social-logos"
                             >
                                 <i
                                     class="fab fa-linkedin fa-2x"

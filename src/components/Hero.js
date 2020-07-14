@@ -30,24 +30,35 @@ class Hero extends React.Component {
                     <Pane textAlign={mobile ? "center" : ""}>
                         <Heading
                             size={900}
-                            fontSize="60px"
+                            fontSize={mobile ? "42px" : "80px"}
                             verticalAlign="middle"
                             color="#6845c2"
                             lineHeight="95%"
                         >
                             Oracle Tutoring
                         </Heading>
-                        <Heading size={700} marginTop="0.5em">
+                        <Heading size={mobile ? 500 : 700} marginTop="0.5em">
                             Getting help with homework has never been so easy.
                         </Heading>
-                        <Heading size={mobile ? 500 : 800} marginTop="4vh">
-                            Sign up for our closed-beta, available in{" "}
+                        <Heading
+                            size={mobile ? 500 : 700}
+                            marginTop="4vh"
+                            textAlign="center"
+                        >
+                            Sign up for our closed-beta, available in
+                        </Heading>
+                        <Heading
+                            size={900}
+                            fontSize={mobile ? "42px" : "90px"}
+                            lineHeight="100%"
+                            textAlign="center"
+                        >
                             <span style={{ color: "#6845c2" }}>
                                 <Countdown date={1594839600000} />
                             </span>
                         </Heading>
                         <Pane marginTop="1vh">
-                            <Signup alignment={mobile ? "center" : "left"} />
+                            <Signup alignment="center" />
                         </Pane>
 
                         {/* <a
