@@ -37,7 +37,9 @@ class Signup extends React.Component {
                 lastSubmission: Date.now(),
             },
             () => {
-                toaster.success("Sign up successful!");
+                toaster.success("Sign up successful!", {
+                    description: "We will be in contact with you shortly",
+                });
             }
         );
     }
