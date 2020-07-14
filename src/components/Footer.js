@@ -31,7 +31,7 @@ class Footer extends React.Component {
                         <Text color="white" size={700}>
                             <Link
                                 href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=oraclestudentnetwork@gmail.com&tf=1"
-                                rel="noopner"
+                                rel="noopener"
                                 target="_blank"
                                 color="green"
                             >
