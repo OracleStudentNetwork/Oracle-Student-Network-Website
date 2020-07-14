@@ -31,13 +31,8 @@ class Mission extends React.Component {
                         Oracle Tutoring was founded by a group of volunteer
                         tutors and instructors passionate about supporting
                         students achieve to their fullest potential during CoVID
-                        induced distance learning. We don’t want to think of
-                        ourselves as trying to redefine education. We are
-                        helping Canadian secondary students participating in
-                        distance learning succeed while respecting the
-                        boundaries of teachers. We want to change the notion
-                        that online tutoring must exclusively consist of
-                        pre-booked meetings between a tutor and student.
+                        induced distance learning. We want to revolutionize how students 
+                        experience the intersection of technology and education.
                     </Paragraph>
                 </Pane>
             </Pane>
