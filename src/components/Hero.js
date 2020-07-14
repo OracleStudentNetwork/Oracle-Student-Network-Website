@@ -62,7 +62,7 @@ class Hero extends React.Component {
                         </Pane>
                         <Pane textAlign="center">
                             <a
-                                href="https://google.com"
+                                href="https://discord.com/new"
                                 rel="noopener"
                                 target="_blank"
                             >

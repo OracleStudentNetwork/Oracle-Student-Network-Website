@@ -83,7 +83,7 @@ class Footer extends React.Component {
                                 ></i>
                             </a>
                             <a
-                                href="https://www.linkedin.com/"
+                                href="https://www.linkedin.com/company/osn-reo/"
                                 rel="noopener"
                                 target="_blank"
                                 className="social-logos"
