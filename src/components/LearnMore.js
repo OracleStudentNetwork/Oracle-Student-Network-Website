@@ -17,22 +17,22 @@ function LearnMore() {
             paddingLeft="10vw"
         >
             <InfoCard
-                title="Become a Volunteer Scholar or team member"
-                content="Are you a secondary or post-secondary student interested in helping students across North America succeed during distance learning? Volunteer hours will be provided if requested. We are also looking for workshop leaders, platform moderators, and python developers comfortable with using Discord’s API. Express interest to join us in this form."
+                title="Join Our Team"
+                content="Are you a secondary or post-secondary student interested in helping students succeed during distance learning? We are looking for tutors, instructors, moderators, and developers. Express interest through this form."
                 img={Team}
                 alt="Join our Team"
                 reverse={false}
             />
             <InfoCard
                 title="Content Policy"
-                content="We want to ensure students follow all required policies related to academic honesty and plagiarism. Our volunteer scholars are instructed to not just answer questions, but rather guide a student’s thinking in the right direction. Help for essays or other written works only consist of suggestions made during the brainstorming or peer editing process. View our full content policy here."
+                content="Students must abide to their respective  policies related to academic honesty. Our volunteer tutors are instructed to guide a student’s thinking in the right direction. We do not write essays, rather provide peer editing and brainstorming feedback. Content policy found here."
                 img={Terms}
                 alt="Content Policy"
                 reverse={true}
             />
             <InfoCard
                 title="Donate"
-                content="Oracle Tutoring offers all its services completely free of charge. We rely on donations, grants, and partnerships to sustain our operations. If you would like to help us continue to provide educational aids and workshops to students, we are accepting donations through PayPal."
+                content="Oracle Tutoring offers all its services completely free of charge. We rely on donations and grants to sustain our operations. If you would like to support us as we help students tackle distance learning, we are accepting donations through PayPal."
                 img={Vault}
                 alt="Donate"
                 reverse={false}
