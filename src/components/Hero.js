@@ -65,6 +65,7 @@ class Hero extends React.Component {
                                 </Pane>
                                 <Pane
                                     display="flex"
+                                    flexDirection={mobile ? "column" : "row"}
                                     marginTop="2vh"
                                     width="100%"
                                 >
@@ -77,7 +78,9 @@ class Hero extends React.Component {
                                             iconAfter="arrow-right"
                                             appearance="primary"
                                             height={40}
+                                            width={200}
                                             disabled
+                                            marginTop={mobile ? "2vh" : ""}
                                         >
                                             <Pane marginRight={10}>
                                                 <i className="fab fa-discord fa-lg"></i>
@@ -95,6 +98,8 @@ class Hero extends React.Component {
                                             appearance="default"
                                             marginLeft={mobile ? "" : "1em"}
                                             height={40}
+                                            width={200}
+                                            marginTop={mobile ? "2vh" : ""}
                                         >
                                             What is Discord?
                                         </Button>
