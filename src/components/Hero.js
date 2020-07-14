@@ -1,6 +1,6 @@
 import React from "react";
 import HeroImage from "../assets/hero.svg";
-import { Pane, Heading } from "evergreen-ui";
+import { Pane, Heading, Button } from "evergreen-ui";
 import Countdown from "react-countdown";
 import Signup from "./Signup";
 
@@ -49,7 +49,7 @@ class Hero extends React.Component {
                         </Heading>
                         <Heading
                             size={900}
-                            fontSize={mobile ? "42px" : "90px"}
+                            fontSize={mobile ? "42px" : "80px"}
                             lineHeight="100%"
                             textAlign="center"
                         >
@@ -60,39 +60,41 @@ class Hero extends React.Component {
                         <Pane marginTop="1vh">
                             <Signup alignment="center" />
                         </Pane>
-
-                        {/* <a
-                            href="https://google.com"
-                            rel="noopener"
-                            target="_blank"
-                        >
-                            <Button
-                                iconAfter="arrow-right"
-                                appearance="primary"
-                                marginTop="2em"
-                                height={40}
+                        <Pane textAlign="center">
+                            <a
+                                href="https://google.com"
+                                rel="noopener"
+                                target="_blank"
                             >
-                                <Pane marginRight={10}>
-                                    <i className="fab fa-discord fa-lg"></i>
-                                </Pane>
-                                Join our Discord
-                            </Button>
-                        </a>
-                        <a
-                            href="https://discord.com/why-discord-is-different"
-                            rel="noopener"
-                            target="_blank"
-                        >
-                            <Button
-                                iconBefore="info-sign"
-                                appearance="default"
-                                marginTop="2em"
-                                marginLeft={mobile ? "" : "1em"}
-                                height={40}
+                                <Button
+                                    iconAfter="arrow-right"
+                                    appearance="primary"
+                                    marginTop="2em"
+                                    height={40}
+                                    disabled
+                                >
+                                    <Pane marginRight={10}>
+                                        <i className="fab fa-discord fa-lg"></i>
+                                    </Pane>
+                                    Join our Discord
+                                </Button>
+                            </a>
+                            <a
+                                href="https://discord.com/why-discord-is-different"
+                                rel="noopener"
+                                target="_blank"
                             >
-                                What is Discord?
-                            </Button>
-                        </a> */}
+                                <Button
+                                    iconBefore="info-sign"
+                                    appearance="default"
+                                    marginTop="2em"
+                                    marginLeft={mobile ? "" : "1em"}
+                                    height={40}
+                                >
+                                    What is Discord?
+                                </Button>
+                            </a>
+                        </Pane>
                     </Pane>
                 </Pane>
                 <Pane
