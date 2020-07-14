@@ -13,7 +13,11 @@ class Mission extends React.Component {
                 paddingBottom="10vh"
                 background="#f3f5f9"
             >
-                <Heading size={900} fontSize="40px" color="#6845c2">
+                <Heading
+                    size={900}
+                    fontSize={mobile ? "32px" : "48px"}
+                    color="#6845c2"
+                >
                     Our Mission
                 </Heading>
                 <Pane marginTop="4vh">

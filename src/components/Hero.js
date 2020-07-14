@@ -30,16 +30,17 @@ class Hero extends React.Component {
                     <Pane textAlign={mobile ? "center" : ""}>
                         <Heading
                             size={900}
-                            fontSize="48px"
+                            fontSize="60px"
                             verticalAlign="middle"
                             color="#6845c2"
+                            lineHeight="95%"
                         >
                             Oracle Tutoring
                         </Heading>
                         <Heading size={700} marginTop="0.5em">
                             Getting help with homework has never been so easy.
                         </Heading>
-                        <Heading size={500} marginTop="4vh">
+                        <Heading size={mobile ? 500 : 800} marginTop="4vh">
                             Sign up for our closed-beta, available in{" "}
                             <span style={{ color: "#6845c2" }}>
                                 <Countdown date={1594839600000} />
@@ -91,8 +92,8 @@ class Hero extends React.Component {
                 >
                     <img
                         src={HeroImage}
-                        height="442px"
-                        width="auto"
+                        height="auto"
+                        width="400px"
                         className="hero-image"
                         alt="Hero Image"
                     />

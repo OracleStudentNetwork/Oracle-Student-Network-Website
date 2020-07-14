@@ -1,5 +1,5 @@
 import React from "react";
-import { Pane, Heading, Text } from "evergreen-ui";
+import { Pane, Heading, Text, Link } from "evergreen-ui";
 
 class Footer extends React.Component {
     constructor(props) {
@@ -29,7 +29,14 @@ class Footer extends React.Component {
                             Contact Us
                         </Heading>
                         <Text color="white" size={700}>
-                            someone@example.com
+                            <Link
+                                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=oraclestudentnetwork@gmail.com&tf=1"
+                                rel="noopner"
+                                target="_blank"
+                                color="green"
+                            >
+                                oraclestudentnetwork@gmail.com
+                            </Link>
                         </Text>
                     </Pane>
                     <Pane textAlign="center" flexGrow="1">
@@ -63,12 +70,12 @@ class Footer extends React.Component {
                                 ></i>
                             </a>
                             <a
-                                href="https://twitter.com/"
+                                href="https://www.facebook.com/"
                                 rel="noopener"
                                 target="_blank"
                             >
                                 <i
-                                    class="fab fa-twitter fa-2x"
+                                    class="fab fa-facebook-square fa-2x"
                                     style={{ color: "white" }}
                                 ></i>
                             </a>
