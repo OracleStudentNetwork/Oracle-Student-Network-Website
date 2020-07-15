@@ -2,14 +2,10 @@ import React from "react";
 import "./App.css";
 import { Pane } from "evergreen-ui";
 import { useMediaQuery } from "react-responsive";
-import ScrollableAnchor from "react-scrollable-anchor";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Terms from "./Pages/Terms";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Mission from "./components/Mission";
-import Services from "./components/Services";
-import LearnMore from "./components/LearnMore";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import AOS from "aos";
 import Config from "./components/Config";
 import Firebase from "firebase";
@@ -25,35 +21,13 @@ function App() {
     Firebase.analytics();
     const mobile = useMediaQuery({ query: "(max-width: 800px)" });
     return (
-        <Pane>
+        <Router>
             <Navbar mobile={mobile} />
-            <ScrollableAnchor id={"hero"}>
-                <div>
-                    <Hero mobile={mobile} />
-                </div>
-            </ScrollableAnchor>
-            <ScrollableAnchor id={"mission"}>
-                <div>
-                    <Mission mobile={mobile} />
-                </div>
-            </ScrollableAnchor>
-            <ScrollableAnchor id={"services"}>
-                <div>
-                    <Services mobile={mobile} />
-                </div>
-            </ScrollableAnchor>
-            <ScrollableAnchor id={"learn-more"}>
-                <div>
-                    <LearnMore />
-                </div>
-            </ScrollableAnchor>
-            <ScrollableAnchor id={"contact"}>
-                <div>
-                    <Contact mobile={mobile} />
-                </div>
-            </ScrollableAnchor>
-            <Footer mobile={mobile} />
-        </Pane>
+            <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/terms" component={Terms} />
+            </Switch>
+        </Router>
     );
 }
 
