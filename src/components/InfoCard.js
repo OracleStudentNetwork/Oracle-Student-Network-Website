@@ -6,18 +6,16 @@ function InfoCard(props) {
     const mobile = useMediaQuery({ query: "(max-width: 680px)" });
     const content = (
         <Pane width={mobile ? "100%" : "40%"} marginBottom="2em">
-            <Heading
-                size={900}
-                textAlign={props.reverse ? "right" : "left"}
-                color="#6845c2"
-            >
+            <Heading size={900} textAlign="left" color="#031b4e">
                 {props.title}
             </Heading>
             <Paragraph
-                size={600}
+                size={500}
                 marginTop="1em"
-                textAlign={props.reverse && !mobile ? "right" : "left"}
+                textAlign="left"
                 fontSize="18px"
+                lineHeight="28px"
+                color="#5b6987"
             >
                 {props.content}
             </Paragraph>

@@ -1,8 +1,6 @@
 import React from "react";
 import HeroImage from "../assets/hero.svg";
-import { Pane, Heading, Button, Text } from "evergreen-ui";
-import Countdown from "react-countdown";
-import Signup from "./Signup";
+import { Pane, Heading, Button, Paragraph } from "evergreen-ui";
 
 class Hero extends React.Component {
     constructor(props) {
@@ -19,6 +17,7 @@ class Hero extends React.Component {
                 paddingRight="10vw"
                 paddingLeft="10vw"
                 flexDirection={mobile ? "column" : "row"}
+                background="#6845c2"
             >
                 <Pane
                     display="flex"
@@ -30,83 +29,64 @@ class Hero extends React.Component {
                     <Pane textAlign={mobile ? "center" : ""}>
                         <Heading
                             size={900}
-                            fontSize={mobile ? "42px" : "80px"}
+                            fontSize={mobile ? "42px" : "64px"}
                             verticalAlign="middle"
-                            color="#6845c2"
+                            color="white"
                             lineHeight="95%"
                         >
                             Oracle Tutoring
                         </Heading>
-                        <Heading size={mobile ? 500 : 700} marginTop="0.5em">
+                        <Paragraph
+                            color="white"
+                            size={500}
+                            fontSize="18px"
+                            marginTop="5vh"
+                        >
                             Getting help with homework has never been so easy.
-                        </Heading>
-                        <Pane marginTop="6vh">
-                            <Heading
-                                size={mobile ? 500 : 700}
-                                textAlign={mobile ? "center" : "left"}
+                            Some more dummy text here to make it not feel empty
+                        </Paragraph>
+                    </Pane>
+                    <Pane
+                        display="flex"
+                        flexDirection={mobile ? "column" : "row"}
+                        marginTop="2vh"
+                        width="100%"
+                        justifyContent={mobile ? "center" : "flex-start"}
+                    >
+                        <a
+                            href="https://discord.com/new"
+                            rel="noopener"
+                            target="_blank"
+                        >
+                            <Button
+                                iconAfter="arrow-right"
+                                appearance="primary"
+                                height={40}
+                                width={200}
+                                marginTop={mobile ? "2vh" : ""}
                             >
-                                Sign up for our closed-beta, available in
-                            </Heading>
-                            <Heading
-                                size={900}
-                                fontSize={mobile ? "42px" : "80px"}
-                                lineHeight="100%"
-                                textAlign={mobile ? "center" : "left"}
+                                <Pane marginRight={10}>
+                                    <i className="fab fa-discord fa-lg"></i>
+                                </Pane>
+                                Join our Discord
+                            </Button>
+                        </a>
+                        <a
+                            href="https://discord.com/why-discord-is-different"
+                            rel="noopener"
+                            target="_blank"
+                        >
+                            <Button
+                                iconBefore="info-sign"
+                                appearance="default"
+                                marginLeft={mobile ? "" : "1em"}
+                                height={40}
+                                width={200}
+                                marginTop={mobile ? "2vh" : ""}
                             >
-                                <span style={{ color: "#1b6bf5" }}>
-                                    <Countdown date={1594839600000} />
-                                </span>
-                            </Heading>
-                            <Pane>
-                                <Pane marginTop="1vh">
-                                    <Signup
-                                        alignment={mobile ? "center" : "left"}
-                                    />
-                                </Pane>
-                                <Pane
-                                    display="flex"
-                                    flexDirection={mobile ? "column" : "row"}
-                                    marginTop="2vh"
-                                    width="100%"
-                                >
-                                    <a
-                                        href="https://discord.com/new"
-                                        rel="noopener"
-                                        target="_blank"
-                                    >
-                                        <Button
-                                            iconAfter="arrow-right"
-                                            appearance="primary"
-                                            height={40}
-                                            width={200}
-                                            disabled
-                                            marginTop={mobile ? "2vh" : ""}
-                                        >
-                                            <Pane marginRight={10}>
-                                                <i className="fab fa-discord fa-lg"></i>
-                                            </Pane>
-                                            Join our Discord
-                                        </Button>
-                                    </a>
-                                    <a
-                                        href="https://discord.com/why-discord-is-different"
-                                        rel="noopener"
-                                        target="_blank"
-                                    >
-                                        <Button
-                                            iconBefore="info-sign"
-                                            appearance="default"
-                                            marginLeft={mobile ? "" : "1em"}
-                                            height={40}
-                                            width={200}
-                                            marginTop={mobile ? "2vh" : ""}
-                                        >
-                                            What is Discord?
-                                        </Button>
-                                    </a>
-                                </Pane>
-                            </Pane>
-                        </Pane>
+                                What is Discord?
+                            </Button>
+                        </a>
                     </Pane>
                 </Pane>
                 <Pane

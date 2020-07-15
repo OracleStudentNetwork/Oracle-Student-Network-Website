@@ -16,77 +16,75 @@ function Services(props) {
     const mobile = props.mobile;
     return (
         <Pane
-            paddingTop="12vh"
-            paddingBottom="12vh"
-            paddingRight={mobile ? "10vw" : ""}
-            paddingLeft="10vw"
-            background="#7050c2"
+            paddingTop="15vh"
+            paddingBottom="15vh"
+            paddingRight="15vw"
+            paddingLeft="15vw"
             display="flex"
             flexDirection={mobile ? "column" : "row"}
             justifyContent="center"
             alignItems="center"
+            background="#f3f5f9"
         >
-            <Pane
-                width={mobile ? "100%" : "40%"}
-                data-aos="fade-right"
-                minWidth="30vw"
-            >
-                <Pane display="flex" alignItems="center" marginBottom="2.5em">
-                    <Avatar
-                        src={Logo}
-                        size={mobile ? "64px" : "96px"}
-                        marginRight="2em"
-                    />
-                    <Heading
-                        size={900}
-                        fontSize={mobile ? "32px" : "48px"}
-                        color="white"
-                        textAlign="left"
-                        verticalAlign="text-top"
-                    >
-                        What We Do
-                    </Heading>
-                </Pane>
-                <Paragraph size={500} color="white">
-                    Tutoring and homework help is offered at select times every single day. 
-                    We also host workshops, raffles, amd community events each week. 
-                    Oracle is proud to be the first non-profit group to offer on-demand tutoring through the convenience of a messaging platform.
-                </Paragraph>
-                <UnorderedList
-                    icon="tick-circle"
-                    iconColor="success"
-                    size={600}
-                    marginTop="3em"
+            <Pane>
+                <Heading
+                    size={900}
+                    fontSize={mobile ? "32px" : "48px"}
+                    color="#031b4e"
+                    textAlign="center"
                 >
-                    <ListItem color="white">
-                        <Heading size={700} color="#00d7d2">
+                    What We Do
+                </Heading>
+                <Paragraph
+                    size={500}
+                    fontSize="18px"
+                    lineHeight="28px"
+                    color="#5b6987"
+                    marginTop="5vh"
+                    textAlign="center"
+                >
+                    We host workshops, raffles, and community events each week.
+                    Oracle is proud to be the first non-profit group to offer
+                    on-demand tutoring through the convenience of a messaging
+                    platform.
+                </Paragraph>
+                <Pane
+                    display="flex"
+                    flexDirection={mobile ? "column" : "row"}
+                    justifyContent="space-evenly"
+                >
+                    <Pane textAlign="center" marginTop="10vh">
+                        <Pane color="#6845c2">
+                            <i class="fas fa-broadcast-tower fa-2x"></i>
+                        </Pane>
+                        <Heading size={700} color="#031b4e" marginTop="2vh">
                             Live Virtual Tutoring
                         </Heading>
-                        <Text color="white" size={500}>
+                        <Paragraph color="#5b6987" size={500} marginTop="2vh">
                             Log on to Oracle to receive on-demand homework help
                             and concept clarification, completely free!
-                        </Text>
-                    </ListItem>
-                    <ListItem color="white">
-                        <Heading size={700} color="#00d7d2" marginTop="1em">
+                        </Paragraph>
+                    </Pane>
+                    <Pane textAlign="center" marginTop="10vh">
+                        <Pane color="#6845c2">
+                            <i class="far fa-calendar-check fa-2x"></i>
+                        </Pane>
+
+                        <Heading size={700} color="#031b4e" marginTop="2vh">
                             Community Events
                         </Heading>
-                        <Text color="white" size={500}>
+                        <Paragraph color="#5b6987" size={500} marginTop="2vh">
                             Socialize, share memes, stream music, participate in
                             weekly gift card raffles. It’s important to leave
                             time to relax.
-                        </Text>
-                    </ListItem>
-                    <ListItem color="white">
-                        <Pane
-                            display="flex"
-                            flexDirection="row"
-                            alignItems="center"
-                            marginTop="1em"
-                        >
-                            <Heading size={700} color="#00d7d2">
-                                Workshops
-                            </Heading>
+                        </Paragraph>
+                    </Pane>
+                    <Pane textAlign="center" marginTop="10vh">
+                        <Pane color="#6845c2">
+                            <i class="fas fa-hammer fa-2x"></i>
+                        </Pane>
+                        <Heading size={700} color="#031b4e" marginTop="2vh">
+                            Workshops
                             <Badge
                                 color="blue"
                                 marginLeft="10px"
@@ -95,24 +93,15 @@ function Services(props) {
                             >
                                 Coming Soon
                             </Badge>
-                        </Pane>
+                        </Heading>
 
-                        <Text color="white" size={500}>
+                        <Paragraph color="#5b6987" size={500} marginTop="2vh">
                             Oracle will host daily workshops on extracurricular
                             topics lead by talented and motivated youth
                             instructors.
-                        </Text>
-                    </ListItem>
-                </UnorderedList>
-            </Pane>
-            <Pane
-                marginLeft="5em"
-                borderTopLeftRadius={50}
-                borderBottomLeftRadius={50}
-                overflow="hidden"
-                display={mobile ? "none" : ""}
-            >
-                <img src={Classroom} alt="Classroom" />
+                        </Paragraph>
+                    </Pane>
+                </Pane>
             </Pane>
         </Pane>
     );
