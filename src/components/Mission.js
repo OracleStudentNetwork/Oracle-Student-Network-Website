@@ -29,11 +29,10 @@ class Mission extends React.Component {
                         color="#5b6987"
                     >
                         Oracle Tutoring was founded by a group of volunteer
-                        tutors and instructors passionate about supporting
-                        students achieve to their fullest potential during CoVID
-                        induced distance learning. We want to revolutionize how
-                        students experience the intersection of technology and
-                        education.
+                        tutors and instructors who want to help students reach
+                        their fullest potential during COVID-19 induced distance
+                        learning. We seek to revolutionize traditional education
+                        through technology.
                     </Paragraph>
                 </Pane>
                 <Pane textAlign="center" marginTop="15vh">

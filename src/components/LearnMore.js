@@ -24,7 +24,7 @@ function LearnMore() {
             />
             <InfoCard
                 title="Content Policy"
-                content="Students must abide to their respective  policies related to academic honesty. Our volunteer tutors are instructed to guide a student’s thinking in the right direction. We do not write essays, rather provide peer editing and brainstorming feedback. Content policy found here."
+                content="Students must abide by all applicable policies related to academic honesty. Our volunteer tutors are instructed to guide a student’s thinking in the right direction. We do not write essays and tests; we provide peer editing, brainstorming feedback, and homework help. Full content policy found here."
                 img={Terms}
                 alt="Content Policy"
                 reverse={true}

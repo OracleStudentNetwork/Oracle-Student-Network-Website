@@ -52,7 +52,7 @@ class Hero extends React.Component {
                         flexDirection={mobile ? "column" : "row"}
                         marginTop="2vh"
                         width="100%"
-                        justifyContent={mobile ? "center" : "flex-start"}
+                        alignItems="center"
                     >
                         <a
                             href="https://discord.com/new"

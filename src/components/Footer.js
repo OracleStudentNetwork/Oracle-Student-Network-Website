@@ -46,7 +46,7 @@ class Footer extends React.Component {
                             marginTop="1em"
                             marginBottom="1em"
                         >
-                            Connect with us
+                            Connect With Us
                         </Heading>
                         <Pane display="flex" justifyContent="center">
                             <a
