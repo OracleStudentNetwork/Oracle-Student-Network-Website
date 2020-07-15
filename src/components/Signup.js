@@ -1,6 +1,8 @@
 import React from "react";
 import Config from "./Config";
-import Firebase from "firebase";
+import Firebase from "firebase/app";
+import "firebase/database";
+import "firebase/analytics";
 import { Pane, TextInput, Button, toaster } from "evergreen-ui";
 
 class Signup extends React.Component {

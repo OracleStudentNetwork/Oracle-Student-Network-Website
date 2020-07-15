@@ -1,7 +1,6 @@
 import React from "react";
 import { Heading } from "evergreen-ui";
 import Logo from "../assets/nav_logo.png";
-import { Link } from "react-router-dom";
 
 class Navbar extends React.Component {
     render() {
@@ -11,10 +10,11 @@ class Navbar extends React.Component {
                 style={{
                     display: this.props.mobile ? "none" : "flex",
                     justifyContent: "flex-start",
+                    flexDirection: this.props.mobile ? "column" : "row",
                 }}
             >
                 <a href="/#hero" style={{ marginLeft: "1vw" }}>
-                    <img src={Logo} width="auto" height="40px"></img>
+                    <img src={Logo} alt="logo" width="auto" height="40px"></img>
                 </a>
                 <ul className="navbar-links">
                     <Heading size={500}>

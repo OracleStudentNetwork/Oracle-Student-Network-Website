@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import { Pane } from "evergreen-ui";
 import { useMediaQuery } from "react-responsive";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -8,7 +7,8 @@ import Terms from "./Pages/Terms";
 import Navbar from "./components/Navbar";
 import AOS from "aos";
 import Config from "./components/Config";
-import Firebase from "firebase";
+import Firebase from "firebase/app";
+import "firebase/analytics";
 import "aos/dist/aos.css";
 AOS.init({
     offset: 400,

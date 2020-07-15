@@ -3,9 +3,6 @@ import HeroImage from "../assets/hero.svg";
 import { Pane, Heading, Button, Paragraph } from "evergreen-ui";
 
 class Hero extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const mobile = this.props.mobile;
         return (
@@ -30,7 +27,6 @@ class Hero extends React.Component {
                         <Heading
                             size={900}
                             fontSize={mobile ? "42px" : "64px"}
-                            verticalAlign="middle"
                             color="white"
                             lineHeight="95%"
                         >
@@ -56,7 +52,7 @@ class Hero extends React.Component {
                     >
                         <a
                             href="https://discord.com/new"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             target="_blank"
                         >
                             <Button
@@ -74,7 +70,7 @@ class Hero extends React.Component {
                         </a>
                         <a
                             href="https://discord.com/why-discord-is-different"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             target="_blank"
                         >
                             <Button
@@ -101,7 +97,7 @@ class Hero extends React.Component {
                         height="auto"
                         width="400px"
                         className="hero-image"
-                        alt="Hero Image"
+                        alt="Hero"
                     />
                 </Pane>
             </Pane>

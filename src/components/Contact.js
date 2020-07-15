@@ -1,13 +1,10 @@
 import React from "react";
-import { Pane, Paragraph, toaster, Heading } from "evergreen-ui";
+import { Pane, Paragraph, Heading } from "evergreen-ui";
 import Appstore from "../assets/appstore.svg";
 import Playstore from "../assets/playstore.png";
 import Signup from "./Signup";
 
 class Contact extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <Pane
@@ -53,16 +50,16 @@ class Contact extends React.Component {
                     <Pane margin={10}>
                         <a
                             href="https://apps.apple.com/us/app/discord-chat-for-games/id985746746"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             target="_blank"
                         >
-                            <img src={Appstore}></img>
+                            <img src={Appstore} alt="Get it on App Store"></img>
                         </a>
                     </Pane>
                     <Pane margin={10}>
                         <a
                             href="https://play.google.com/store/apps/details?id=com.discord&hl=en_CA&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             target="_blank"
                         >
                             <img

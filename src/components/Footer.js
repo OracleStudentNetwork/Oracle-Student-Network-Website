@@ -2,9 +2,6 @@ import React from "react";
 import { Pane, Heading, Text, Link } from "evergreen-ui";
 
 class Footer extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <Pane
@@ -28,10 +25,10 @@ class Footer extends React.Component {
                         >
                             Contact Us
                         </Heading>
-                        <Text color="white" size={700}>
+                        <Text color="white" size={500}>
                             <Link
                                 href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=oraclestudentnetwork@gmail.com&tf=1"
-                                rel="noopener"
+                                rel="noopener noreferrer"
                                 target="_blank"
                                 color="green"
                             >
@@ -51,7 +48,7 @@ class Footer extends React.Component {
                         <Pane display="flex" justifyContent="center">
                             <a
                                 href="https://www.instagram.com/oracletutoring/"
-                                rel="noopener"
+                                rel="noopener noreferrer"
                                 target="_blank"
                                 className="social-logos"
                             >
@@ -62,7 +59,7 @@ class Footer extends React.Component {
                             </a>
                             <a
                                 href="https://discord.com/new"
-                                rel="noopener"
+                                rel="noopener noreferrer"
                                 target="_blank"
                                 className="social-logos"
                             >
@@ -73,7 +70,7 @@ class Footer extends React.Component {
                             </a>
                             <a
                                 href="https://www.facebook.com/"
-                                rel="noopener"
+                                rel="noopener noreferrer"
                                 target="_blank"
                                 className="social-logos"
                             >
@@ -84,7 +81,7 @@ class Footer extends React.Component {
                             </a>
                             <a
                                 href="https://www.linkedin.com/company/osn-reo/"
-                                rel="noopener"
+                                rel="noopener noreferrer"
                                 target="_blank"
                                 className="social-logos"
                             >
