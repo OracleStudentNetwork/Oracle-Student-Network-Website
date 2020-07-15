@@ -10,7 +10,6 @@ function LearnMore() {
         <Pane
             display="flex"
             flexDirection="column"
-            background="#e8e9f1"
             paddingTop="15vh"
             paddingBottom="5em"
             paddingRight="10vw"
