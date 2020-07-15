@@ -5,7 +5,7 @@ import { Pane, Heading, Paragraph } from "evergreen-ui";
 function InfoCard(props) {
     const mobile = useMediaQuery({ query: "(max-width: 680px)" });
     const content = (
-        <Pane width={mobile ? "100%" : "40%"} marginBottom="2em">
+        <Pane width={mobile ? "100%" : "50%"} marginBottom="2em">
             <Heading size={900} textAlign="left" color="#031b4e">
                 {props.title}
             </Heading>
@@ -22,7 +22,7 @@ function InfoCard(props) {
         </Pane>
     );
     const img = (
-        <Pane borderRadius={5} border>
+        <Pane>
             <img src={props.img} alt={props.alt} width="250px" />
         </Pane>
     );
@@ -31,7 +31,7 @@ function InfoCard(props) {
     return (
         <Pane
             display="flex"
-            justifyContent="space-evenly"
+            justifyContent="space-between"
             alignItems="center"
             marginBottom="12vh"
             flexDirection={mobile ? "column" : "row"}

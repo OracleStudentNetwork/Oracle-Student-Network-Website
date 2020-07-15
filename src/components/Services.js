@@ -32,22 +32,18 @@ function Services(props) {
                     marginTop="5vh"
                     textAlign="center"
                 >
-                    We host workshops, raffles, and community events each week.
-                    Oracle is proud to be the first non-profit group to offer
-                    on-demand tutoring through the convenience of a messaging
-                    platform.
+                    Tutoring and homework help services are offered through ou
+                    platform every weekday at select times. We host workshops,
+                    raffles, and community events each week. Oracle is proud to
+                    be the first non-profit group to offer on-demand tutoring
+                    through the convenience of a messaging platform.
                 </Paragraph>
                 <Pane
                     display="flex"
                     flexDirection={mobile ? "column" : "row"}
                     justifyContent="space-between"
                 >
-                    <Pane
-                        textAlign="center"
-                        marginTop="10vh"
-                        marginLeft="5vh"
-                        marginRight="5vh"
-                    >
+                    <Pane textAlign="center" marginTop="10vh" marginRight="5vw">
                         <Pane color="#6845c2">
                             <i class="fas fa-broadcast-tower fa-2x"></i>
                         </Pane>
@@ -62,8 +58,8 @@ function Services(props) {
                     <Pane
                         textAlign="center"
                         marginTop="10vh"
-                        marginLeft="5vh"
-                        marginRight="5vh"
+                        marginLeft="5vw"
+                        marginRight="5vw"
                     >
                         <Pane color="#6845c2">
                             <i class="far fa-calendar-check fa-2x"></i>
@@ -78,12 +74,7 @@ function Services(props) {
                             time to relax.
                         </Paragraph>
                     </Pane>
-                    <Pane
-                        textAlign="center"
-                        marginTop="10vh"
-                        marginLeft="5vh"
-                        marginRight="5vh"
-                    >
+                    <Pane textAlign="center" marginTop="10vh" marginLeft="5vw">
                         <Pane color="#6845c2">
                             <i class="fas fa-hammer fa-2x"></i>
                         </Pane>

@@ -12,8 +12,8 @@ function LearnMore() {
             flexDirection="column"
             paddingTop="15vh"
             paddingBottom="5em"
-            paddingRight="10vw"
-            paddingLeft="10vw"
+            paddingRight="15vw"
+            paddingLeft="15vw"
         >
             <InfoCard
                 title="Join Our Team"
