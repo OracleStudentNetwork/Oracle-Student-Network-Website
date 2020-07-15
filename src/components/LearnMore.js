@@ -31,7 +31,7 @@ function LearnMore() {
             />
             <InfoCard
                 title="Donate"
-                content="Oracle Tutoring offers all its services completely free of charge. We rely on donations and grants to sustain our operations. If you would like to support us as we help students tackle distance learning, we are accepting donations through PayPal."
+                content="Oracle Tutoring offers all of its services completely free of charge. We rely on donations and grants to sustain our operations. If you would like to support us as we help students tackle distance learning, we are accepting donations through PayPal."
                 img={Vault}
                 alt="Donate"
                 reverse={false}

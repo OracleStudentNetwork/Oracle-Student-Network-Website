@@ -40,9 +40,14 @@ function Services(props) {
                 <Pane
                     display="flex"
                     flexDirection={mobile ? "column" : "row"}
-                    justifyContent="space-evenly"
+                    justifyContent="space-between"
                 >
-                    <Pane textAlign="center" marginTop="10vh">
+                    <Pane
+                        textAlign="center"
+                        marginTop="10vh"
+                        marginLeft="5vh"
+                        marginRight="5vh"
+                    >
                         <Pane color="#6845c2">
                             <i class="fas fa-broadcast-tower fa-2x"></i>
                         </Pane>
@@ -54,7 +59,12 @@ function Services(props) {
                             and concept clarification, completely free!
                         </Paragraph>
                     </Pane>
-                    <Pane textAlign="center" marginTop="10vh">
+                    <Pane
+                        textAlign="center"
+                        marginTop="10vh"
+                        marginLeft="5vh"
+                        marginRight="5vh"
+                    >
                         <Pane color="#6845c2">
                             <i class="far fa-calendar-check fa-2x"></i>
                         </Pane>
@@ -68,18 +78,18 @@ function Services(props) {
                             time to relax.
                         </Paragraph>
                     </Pane>
-                    <Pane textAlign="center" marginTop="10vh">
+                    <Pane
+                        textAlign="center"
+                        marginTop="10vh"
+                        marginLeft="5vh"
+                        marginRight="5vh"
+                    >
                         <Pane color="#6845c2">
                             <i class="fas fa-hammer fa-2x"></i>
                         </Pane>
                         <Heading size={700} color="#031b4e" marginTop="2vh">
                             Workshops
-                            <Badge
-                                color="blue"
-                                marginLeft="10px"
-                                marginTop="6px"
-                                isSolid
-                            >
+                            <Badge color="blue" marginLeft="10px" isSolid>
                                 Coming Soon
                             </Badge>
                         </Heading>
