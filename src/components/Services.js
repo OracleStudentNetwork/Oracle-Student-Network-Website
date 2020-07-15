@@ -1,16 +1,5 @@
 import React from "react";
-import Classroom from "../assets/classroom.svg";
-import Logo from "../assets/logo.png";
-import {
-    Pane,
-    Heading,
-    Text,
-    Avatar,
-    UnorderedList,
-    ListItem,
-    Badge,
-    Paragraph,
-} from "evergreen-ui";
+import { Pane, Heading, Badge, Paragraph } from "evergreen-ui";
 
 function Services(props) {
     const mobile = props.mobile;

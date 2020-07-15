@@ -27,8 +27,16 @@ function App() {
     return (
         <Pane>
             <Navbar mobile={mobile} />
-            <Hero mobile={mobile} />
-            <Mission mobile={mobile} />
+            <ScrollableAnchor id={"hero"}>
+                <div>
+                    <Hero mobile={mobile} />
+                </div>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={"mission"}>
+                <div>
+                    <Mission mobile={mobile} />
+                </div>
+            </ScrollableAnchor>
             <ScrollableAnchor id={"services"}>
                 <div>
                     <Services mobile={mobile} />

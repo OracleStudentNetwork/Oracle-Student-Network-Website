@@ -43,7 +43,8 @@ class Hero extends React.Component {
                             marginTop="5vh"
                         >
                             Getting help with homework has never been so easy.
-                            Some more dummy text here to make it not feel empty
+                            Get involved by signing up for our closed beta
+                            below.
                         </Paragraph>
                     </Pane>
                     <Pane
