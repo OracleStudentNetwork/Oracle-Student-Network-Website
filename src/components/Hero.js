@@ -53,7 +53,7 @@ class Hero extends React.Component {
                                 lineHeight="100%"
                                 textAlign={mobile ? "center" : "left"}
                             >
-                                <span style={{ color: "#6845c2" }}>
+                                <span style={{ color: "#1b6bf5" }}>
                                     <Countdown date={1594839600000} />
                                 </span>
                             </Heading>
