@@ -10,6 +10,7 @@ class Navbar extends React.Component {
                 style={{
                     display: this.props.mobile ? "none" : "flex",
                     justifyContent: "flex-start",
+                    alignItems: this.props.mobile ? "flex-start" : "",
                     flexDirection: this.props.mobile ? "column" : "row",
                 }}
             >
@@ -37,11 +38,11 @@ class Navbar extends React.Component {
                             <a href="/#contact">Contact Us</a>
                         </li>
                     </Heading>
-                    <Heading size={500}>
+                    {/* <Heading size={500}>
                         <li>
                             <a href="terms">Terms</a>
                         </li>
-                    </Heading>
+                    </Heading> */}
                 </ul>
             </nav>
         );

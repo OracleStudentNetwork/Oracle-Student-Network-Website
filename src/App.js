@@ -25,7 +25,7 @@ function App() {
             <Navbar mobile={mobile} />
             <Switch>
                 <Route path="/" exact component={Home} />
-                <Route path="/terms" component={Terms} />
+                {/* <Route path="/terms" component={Terms} /> */}
             </Switch>
         </Router>
     );

@@ -1,5 +1,6 @@
 import React from "react";
 import { Pane, Heading, Text, Link } from "evergreen-ui";
+import Logo from "../assets/logo_transparent.png";
 
 class Footer extends React.Component {
     render() {
@@ -43,7 +44,7 @@ class Footer extends React.Component {
                             </Heading>
                         </a>
                     </Pane>
-                    <Pane display="flex" flexDirection="column">
+                    {/* <Pane display="flex" flexDirection="column">
                         <Heading size={700} color="white" marginBottom="18px">
                             Terms of Use
                         </Heading>
@@ -52,7 +53,7 @@ class Footer extends React.Component {
                                 Terms of Service
                             </Heading>
                         </a>
-                    </Pane>
+                    </Pane> */}
                 </Pane>
                 <hr
                     style={{
@@ -68,9 +69,14 @@ class Footer extends React.Component {
                     justifyContent="space-between"
                     marginTop="24px"
                 >
-                    <Pane textAlign="left">
-                        <Text color="white" size={500}>
-                            oraclestudentnetwork@gmail.com
+                    <Pane
+                        display="flex"
+                        alignItems="center"
+                        justifyContent="center"
+                    >
+                        <img src={Logo} height="30px" />
+                        <Text color="white" size={500} marginLeft="16px">
+                            info@osn-reo.org
                         </Text>
                     </Pane>
                     <Pane
