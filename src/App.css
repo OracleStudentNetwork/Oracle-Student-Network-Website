@@ -46,3 +46,17 @@ nav {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+.heading-bar {
+    height: 8px;
+    width: 80px;
+    background-color: #031b4e;
+    border: none;
+    margin-top: 5vh;
+}
+
+.footer-links {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}

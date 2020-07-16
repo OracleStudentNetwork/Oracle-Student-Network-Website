@@ -43,7 +43,11 @@ function Services(props) {
                     flexDirection={mobile ? "column" : "row"}
                     justifyContent="space-between"
                 >
-                    <Pane textAlign="center" marginTop="10vh" marginRight="5vw">
+                    <Pane
+                        textAlign={mobile ? "center" : "left"}
+                        marginTop="10vh"
+                        marginRight={mobile ? "" : "3vw"}
+                    >
                         <Pane color="#6845c2">
                             <i class="fas fa-broadcast-tower fa-2x"></i>
                         </Pane>
@@ -56,10 +60,10 @@ function Services(props) {
                         </Paragraph>
                     </Pane>
                     <Pane
-                        textAlign="center"
+                        textAlign={mobile ? "center" : "left"}
                         marginTop="10vh"
-                        marginLeft="5vw"
-                        marginRight="5vw"
+                        marginLeft={mobile ? "" : "3vw"}
+                        marginRight={mobile ? "" : "3vw"}
                     >
                         <Pane color="#6845c2">
                             <i class="far fa-calendar-check fa-2x"></i>
@@ -74,15 +78,16 @@ function Services(props) {
                             time to relax.
                         </Paragraph>
                     </Pane>
-                    <Pane textAlign="center" marginTop="10vh" marginLeft="5vw">
+                    <Pane
+                        textAlign={mobile ? "center" : "left"}
+                        marginTop="10vh"
+                        marginLeft={mobile ? "" : "3vw"}
+                    >
                         <Pane color="#6845c2">
                             <i class="fas fa-hammer fa-2x"></i>
                         </Pane>
                         <Heading size={700} color="#031b4e" marginTop="2vh">
                             Workshops
-                            <Badge color="blue" marginLeft="10px" isSolid>
-                                Coming Soon
-                            </Badge>
                         </Heading>
 
                         <Paragraph color="#5b6987" size={500} marginTop="2vh">
@@ -90,6 +95,9 @@ function Services(props) {
                             topics lead by talented and motivated youth
                             instructors.
                         </Paragraph>
+                        <Badge color="purple" marginTop="8px">
+                            Coming Soon
+                        </Badge>
                     </Pane>
                 </Pane>
             </Pane>

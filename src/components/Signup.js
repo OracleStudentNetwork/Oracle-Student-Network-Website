@@ -54,20 +54,20 @@ class Signup extends React.Component {
                     justifyContent={this.props.alignment}
                 >
                     <TextInput
-                        width="50%"
+                        width="30%"
+                        minWidth="200px"
                         name="email"
                         value={this.state.email}
                         onChange={this.updateEmail}
                         placeholder="someone@example.com"
-                        height={38}
+                        height={42}
                     />
                     <Button
                         iconAfter="envelope"
                         appearance="primary"
-                        intent="success"
+                        intent="default"
                         onClick={this.writeToDataBase}
-                        height={38}
-                        marginLeft="10px"
+                        height={42}
                     >
                         Sign Up
                     </Button>

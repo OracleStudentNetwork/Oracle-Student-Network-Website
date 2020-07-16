@@ -5,46 +5,78 @@ class Footer extends React.Component {
     render() {
         return (
             <Pane
-                paddingRight="5vw"
-                paddingLeft="5vw"
+                paddingRight="15vw"
+                paddingLeft="15vw"
+                paddingTop="5vh"
+                paddingBottom="5vh"
                 background="#222"
                 minHeight="60vh"
+                borderTop="1px white solid"
             >
-                <hr></hr>
+                <Pane
+                    display="flex"
+                    flexWrap="wrap"
+                    justifyContent="space-evenly"
+                >
+                    <Pane display="flex" flexDirection="column">
+                        <Heading size={700} color="white" marginBottom="18px">
+                            About Us
+                        </Heading>
+                        <a href="/#mission" className="footer-links">
+                            <Heading color="white" size={500}>
+                                Our Mission
+                            </Heading>
+                        </a>
+                        <a href="/#services" className="footer-links">
+                            <Heading color="white" size={500}>
+                                What We Do
+                            </Heading>
+                        </a>
+                        <a href="/#learn-more" className="footer-links">
+                            <Heading color="white" size={500}>
+                                Learn More
+                            </Heading>
+                        </a>
+                        <a href="/#contact" className="footer-links">
+                            <Heading color="white" size={500}>
+                                Contact Us
+                            </Heading>
+                        </a>
+                    </Pane>
+                    <Pane display="flex" flexDirection="column">
+                        <Heading size={700} color="white" marginBottom="18px">
+                            Terms of Use
+                        </Heading>
+                        <a href="/terms" className="footer-links">
+                            <Heading color="white" size={500}>
+                                Terms of Service
+                            </Heading>
+                        </a>
+                    </Pane>
+                </Pane>
+                <hr
+                    style={{
+                        border: "0px",
+                        borderTop: "1px white solid",
+                        opacity: "0.5",
+                        marginTop: "48px",
+                    }}
+                ></hr>
                 <Pane
                     display="flex"
                     flexDirection={this.props.mobile ? "column" : "row"}
-                    justifyContent="space-around"
+                    justifyContent="space-between"
+                    marginTop="24px"
                 >
-                    <Pane textAlign="center" flexGrow="1">
-                        <Heading
-                            size={700}
-                            color="white"
-                            marginTop="1em"
-                            marginBottom="1em"
-                        >
-                            Contact Us
-                        </Heading>
+                    <Pane textAlign="left">
                         <Text color="white" size={500}>
-                            <Link
-                                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=oraclestudentnetwork@gmail.com&tf=1"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                color="green"
-                            >
-                                oraclestudentnetwork@gmail.com
-                            </Link>
+                            oraclestudentnetwork@gmail.com
                         </Text>
                     </Pane>
-                    <Pane textAlign="center" flexGrow="1">
-                        <Heading
-                            size={700}
-                            color="white"
-                            marginTop="1em"
-                            marginBottom="1em"
-                        >
-                            Connect With Us
-                        </Heading>
+                    <Pane
+                        textAlign="right"
+                        marginTop={this.props.mobile ? "2vh" : ""}
+                    >
                         <Pane display="flex" justifyContent="center">
                             <a
                                 href="https://www.instagram.com/oracletutoring/"
@@ -92,6 +124,7 @@ class Footer extends React.Component {
                             </a>
                         </Pane>
                     </Pane>
+
                     {/* <Pane textAlign="center" flexGrow="1">
                         <Heading
                             size={700}
@@ -125,15 +158,6 @@ class Footer extends React.Component {
                             </Button>
                         </Pane>
                     </Pane> */}
-                    <Pane marginTop="2em">
-                        {/* <iframe
-                            src="https://discordapp.com/widget?id=726625462083649637&theme=dark"
-                            wid th={this.props.mobile ? "250" : "350"}
-                            height="auto"
-                            allowtransparency="true"
-                            frameborder="0"
-                        ></iframe> */}
-                    </Pane>
                 </Pane>
             </Pane>
         );

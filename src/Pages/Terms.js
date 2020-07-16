@@ -1,10 +1,18 @@
 import React from "react";
 import { Pane, Heading, Paragraph } from "evergreen-ui";
+import { useMediaQuery } from "react-responsive";
+import Footer from "../components/Footer";
 
-class Terms extends React.Component {
-    render() {
-        return (
-            <Pane paddingTop="10vh" paddingLeft="15vw" paddingRight="15vw">
+function Terms() {
+    const mobile = useMediaQuery({ query: "(max-width: 800px)" });
+    return (
+        <Pane>
+            <Pane
+                paddingTop="10vh"
+                paddingLeft="15vw"
+                paddingRight="15vw"
+                paddingBottom="10vh"
+            >
                 <Heading size={900} color="#031b4e">
                     Terms and Conditions
                 </Heading>
@@ -19,8 +27,9 @@ class Terms extends React.Component {
                     deserunt mollit anim id est laborum.
                 </Paragraph>
             </Pane>
-        );
-    }
+            <Footer mobile={mobile} />
+        </Pane>
+    );
 }
 
 export default Terms;
