@@ -85,7 +85,7 @@ class Footer extends React.Component {
                     >
                         <Pane display="flex" justifyContent="center">
                             <a
-                                href="https://www.instagram.com/oracletutoring/"
+                                href="https://www.instagram.com/oraclestudentnetwork/"
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="social-logos"
