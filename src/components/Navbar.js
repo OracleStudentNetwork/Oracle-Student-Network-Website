@@ -11,7 +11,6 @@ class Navbar extends React.Component {
                     display: this.props.mobile ? "none" : "flex",
                     justifyContent: "flex-start",
                     alignItems: this.props.mobile ? "flex-start" : "",
-                    flexDirection: this.props.mobile ? "column" : "row",
                 }}
             >
                 <a href="/#hero" style={{ marginLeft: "1vw" }}>
