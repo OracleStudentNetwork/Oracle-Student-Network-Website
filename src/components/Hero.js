@@ -55,7 +55,6 @@ class Hero extends React.Component {
                                 iconAfter="envelope"
                                 appearance="primary"
                                 height={40}
-                                width={240}
                                 marginTop={mobile ? "2vh" : ""}
                             >
                                 {/* <Pane marginRight={10}>
