@@ -27,11 +27,32 @@ class Signup extends React.Component {
     }
     writeToDataBase() {
         const timeElapsed = (Date.now() - this.state.lastSubmission) / 1000;
+        // get current time
+        let today = new Date();
+        let dd = today.getDate();
+        let mm = today.getMonth() + 1; //January is 0
+        let yyyy = today.getFullYear();
+        let hour = today.getHours();
+        let minute = today.getMinutes();
+        let second = today.getSeconds();
+        if (dd < 10) {
+            dd = "0" + dd;
+        }
+        if (mm < 10) {
+            mm = "0" + mm;
+        }
+        today = dd + "/" + mm + "/" + yyyy;
         if (timeElapsed < 5) {
             toaster.warning("You can only only sign up once every 5 seconds");
             return;
         }
-        Firebase.database().ref("/").push(this.state.email);
+        Firebase.database()
+            .ref("/")
+            .push({
+                email: this.state.email,
+                time: hour + "h " + minute + "m " + second + "s",
+                date: today,
+            });
         Firebase.analytics().logEvent("sign_up");
         this.setState(
             {
