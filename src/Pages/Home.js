@@ -5,6 +5,7 @@ import ScrollableAnchor from "react-scrollable-anchor";
 import Hero from "../components/Hero";
 import Mission from "../components/Mission";
 import Services from "../components/Services";
+import Timeline from "../components/Timeline";
 import LearnMore from "../components/LearnMore";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -33,6 +34,11 @@ function Home() {
             <ScrollableAnchor id={"services"}>
                 <div>
                     <Services mobile={mobile} />
+                </div>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={"roadmap"}>
+                <div>
+                    <Timeline mobile={mobile} />
                 </div>
             </ScrollableAnchor>
             <ScrollableAnchor id={"learn-more"}>

@@ -36,14 +36,14 @@ class Mission extends React.Component {
                         through technology.
                     </Paragraph>
                 </Pane>
-                <Pane display="flex" justifyContent="center">
+                {/* <Pane display="flex" justifyContent="center">
                     <hr className="heading-bar"></hr>
                 </Pane>
                 <Pane textAlign="center" marginTop="5vh">
                     <Heading size={mobile ? 600 : 700} color="#031b4e">
                         Sign up for our closed-beta and hear the latest news.
                     </Heading>
-                    {/* <Heading
+                    <Heading
                         size={900}
                         fontSize={mobile ? "42px" : "72px"}
                         lineHeight="100%"
@@ -51,13 +51,13 @@ class Mission extends React.Component {
                         <span style={{ color: "#6845c2" }}>
                             <Countdown date={1594839600000} />
                         </span>
-                    </Heading> */}
+                    </Heading>
                     <Pane>
                         <Pane marginTop="3vh" width="100%">
                             <Signup alignment="center" />
                         </Pane>
                     </Pane>
-                </Pane>
+                </Pane> */}
             </Pane>
         );
     }

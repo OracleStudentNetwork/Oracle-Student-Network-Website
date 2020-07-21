@@ -1,5 +1,6 @@
 import React from "react";
 import HeroImage from "../assets/hero.svg";
+import Signup from "./Signup";
 import { Pane, Heading, Button, Paragraph } from "evergreen-ui";
 
 class Hero extends React.Component {
@@ -20,7 +21,7 @@ class Hero extends React.Component {
                     display="flex"
                     flexDirection="column"
                     justifyContent="center"
-                    alignItems="center"
+                    alignItems="flex-start"
                     width={mobile ? "100%" : ""}
                 >
                     <Pane textAlign={mobile ? "center" : ""}>
@@ -43,7 +44,11 @@ class Hero extends React.Component {
                             below.
                         </Paragraph>
                     </Pane>
-                    <Pane
+                    <Pane marginTop="2vh" width="100%">
+                        <Signup alignment="left" />
+                    </Pane>
+
+                    {/* <Pane
                         display="flex"
                         flexDirection={mobile ? "column" : "row"}
                         marginTop="2vh"
@@ -57,9 +62,9 @@ class Hero extends React.Component {
                                 height={40}
                                 marginTop={mobile ? "2vh" : ""}
                             >
-                                {/* <Pane marginRight={10}>
+                                <Pane marginRight={10}>
                                     <i className="fab fa-discord fa-lg"></i>
-                                </Pane> */}
+                                </Pane>
                                 Sign up for our closed-beta
                             </Button>
                         </a>
@@ -80,7 +85,7 @@ class Hero extends React.Component {
                                 What is Discord?
                             </Button>
                         </a>
-                    </Pane>
+                    </Pane> */}
                 </Pane>
                 <Pane
                     display={mobile ? "none" : "flex"}

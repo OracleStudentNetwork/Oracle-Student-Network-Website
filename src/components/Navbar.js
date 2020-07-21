@@ -29,6 +29,11 @@ class Navbar extends React.Component {
                     </Heading>
                     <Heading size={500}>
                         <li>
+                            <a href="/#roadmap">Road Map</a>
+                        </li>
+                    </Heading>
+                    <Heading size={500}>
+                        <li>
                             <a href="/#learn-more">Learn More</a>
                         </li>
                     </Heading>

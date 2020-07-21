@@ -10,7 +10,7 @@ function LearnMore() {
         <Pane
             display="flex"
             flexDirection="column"
-            paddingTop="15vh"
+            paddingTop="10vh"
             paddingBottom="5em"
             paddingRight="15vw"
             paddingLeft="15vw"

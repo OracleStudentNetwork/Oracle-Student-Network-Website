@@ -52,6 +52,7 @@ class Signup extends React.Component {
                     display="flex"
                     flexDirection="row"
                     justifyContent={this.props.alignment}
+                    width="100%"
                 >
                     <TextInput
                         width="30%"
