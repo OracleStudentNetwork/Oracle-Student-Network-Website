@@ -50,20 +50,20 @@ class Hero extends React.Component {
                         width="100%"
                         alignItems="center"
                     >
-                        <Button
-                            iconAfter="arrow-right"
-                            appearance="primary"
-                            height={40}
-                            width={200}
-                            marginTop={mobile ? "2vh" : ""}
-                        >
-                            <Pane className="disabledButton" display="inherit">
-                                <Pane marginRight={10}>
+                        <a href="/#mission">
+                            <Button
+                                iconAfter="envelope"
+                                appearance="primary"
+                                height={40}
+                                width={240}
+                                marginTop={mobile ? "2vh" : ""}
+                            >
+                                {/* <Pane marginRight={10}>
                                     <i className="fab fa-discord fa-lg"></i>
-                                </Pane>
-                                Join our Discord
-                            </Pane>
-                        </Button>
+                                </Pane> */}
+                                Sign up for our closed-beta
+                            </Button>
+                        </a>
 
                         <a
                             href="https://discord.com/why-discord-is-different"

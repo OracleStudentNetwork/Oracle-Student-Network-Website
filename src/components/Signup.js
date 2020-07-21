@@ -55,7 +55,7 @@ class Signup extends React.Component {
                 >
                     <TextInput
                         width="30%"
-                        minWidth="200px"
+                        minWidth="150px"
                         name="email"
                         value={this.state.email}
                         onChange={this.updateEmail}
@@ -68,6 +68,7 @@ class Signup extends React.Component {
                         intent="default"
                         onClick={this.writeToDataBase}
                         height={42}
+                        minWidth={130}
                     >
                         Sign Up
                     </Button>
