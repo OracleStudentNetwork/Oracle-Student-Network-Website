@@ -50,24 +50,21 @@ class Hero extends React.Component {
                         width="100%"
                         alignItems="center"
                     >
-                        <a
-                            href="https://discord.com/new"
-                            rel="noopener noreferrer"
-                            target="_blank"
+                        <Button
+                            iconAfter="arrow-right"
+                            appearance="primary"
+                            height={40}
+                            width={200}
+                            marginTop={mobile ? "2vh" : ""}
                         >
-                            <Button
-                                iconAfter="arrow-right"
-                                appearance="primary"
-                                height={40}
-                                width={200}
-                                marginTop={mobile ? "2vh" : ""}
-                            >
+                            <Pane className="disabledButton" display="inherit">
                                 <Pane marginRight={10}>
                                     <i className="fab fa-discord fa-lg"></i>
                                 </Pane>
                                 Join our Discord
-                            </Button>
-                        </a>
+                            </Pane>
+                        </Button>
+
                         <a
                             href="https://discord.com/why-discord-is-different"
                             rel="noopener noreferrer"

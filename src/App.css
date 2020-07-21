@@ -60,3 +60,7 @@ nav {
     margin-bottom: 5px;
     color: white;
 }
+
+.disabledButton {
+    cursor: not-allowed !important;
+}
