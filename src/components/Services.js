@@ -32,7 +32,7 @@ function Services(props) {
                     marginTop="5vh"
                     textAlign="center"
                 >
-                    Tutoring and homework help services are offered through ou
+                    Tutoring and homework help services are offered through our
                     platform every weekday at select times. We host workshops,
                     raffles, and community events each week. Oracle is proud to
                     be the first non-profit group to offer on-demand tutoring

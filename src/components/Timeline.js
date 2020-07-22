@@ -46,7 +46,7 @@ class Timeline extends React.Component {
                     />
                     <TimelineEvent
                         icon={<i class="fas fa-user-check fa-3x"></i>}
-                        title="UX Development and Gamma Testing"
+                        title="Further Development"
                         date="2020 August"
                     />
                     <TimelineEvent
