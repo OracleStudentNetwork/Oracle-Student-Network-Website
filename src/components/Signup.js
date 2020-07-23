@@ -76,7 +76,7 @@ class Signup extends React.Component {
                     width="100%"
                 >
                     <TextInput
-                        width="30%"
+                        width={this.props.width}
                         minWidth="150px"
                         name="email"
                         value={this.state.email}

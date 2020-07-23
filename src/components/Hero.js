@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/hero.svg";
+import HeroImage from "../assets/hero.png";
 import Signup from "./Signup";
 import { Pane, Heading, Button, Paragraph } from "evergreen-ui";
 
@@ -22,9 +22,11 @@ class Hero extends React.Component {
                     flexDirection="column"
                     justifyContent="center"
                     alignItems={mobile ? "center" : "flex-start"}
-                    width={mobile ? "100%" : "70%"}
+                    width={mobile ? "100%" : "50vw"}
+                    paddingLeft="2vw"
+                    paddingRight="2vw"
                 >
-                    <Pane textAlign={mobile ? "center" : ""}>
+                    <Pane textAlign={mobile ? "center" : ""} width="100%">
                         <Heading
                             size={900}
                             fontSize={mobile ? "42px" : "64px"}
@@ -36,18 +38,21 @@ class Hero extends React.Component {
                         <Paragraph
                             color="white"
                             size={500}
-                            fontSize="18px"
-                            marginTop="5vh"
+                            fontSize="20px"
+                            marginTop="10px"
                         >
                             Getting help with homework has never been so easy.
                         </Paragraph>
-                        <Paragraph color="white" size={500} fontSize="18px">
+                        <Heading color="#89CCFF" size={700} marginTop="5vh">
                             Get involved by signing up for our closed beta
                             below.
-                        </Paragraph>
+                        </Heading>
                     </Pane>
-                    <Pane marginTop="2vh" width="100%">
-                        <Signup alignment={mobile ? "center" : "left"} />
+                    <Pane width="100%" marginTop="10px">
+                        <Signup
+                            alignment={mobile ? "center" : "left"}
+                            width="50%"
+                        />
                     </Pane>
 
                     {/* <Pane
@@ -92,16 +97,19 @@ class Hero extends React.Component {
                 <Pane
                     display={mobile ? "none" : "flex"}
                     justifyContent="center"
-                    marginLeft="10vw"
+                    paddingLeft="2vw"
+                    paddingRight="2vw"
                     alignItems="center"
                 >
-                    <img
-                        src={HeroImage}
-                        height="auto"
-                        width="400px"
-                        className="hero-image"
-                        alt="Hero"
-                    />
+                    <Pane borderRadius={3}>
+                        <img
+                            src={HeroImage}
+                            height="auto"
+                            width="700px"
+                            className="hero-image"
+                            alt="Hero"
+                        />
+                    </Pane>
                 </Pane>
             </Pane>
         );

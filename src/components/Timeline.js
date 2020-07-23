@@ -64,7 +64,7 @@ class Timeline extends React.Component {
                     </Heading>
                     <Pane>
                         <Pane marginTop="3vh" width="100%">
-                            <Signup alignment="center" />
+                            <Signup alignment="center" width="30%" />
                         </Pane>
                     </Pane>
                 </Pane>
