@@ -19,7 +19,7 @@ AOS.init({
 function App() {
     if (!Firebase.apps.length) Firebase.initializeApp(Config);
     Firebase.analytics();
-    const mobile = useMediaQuery({ query: "(max-width: 800px)" });
+    const mobile = useMediaQuery({ query: "(max-width: 900px)" });
     return (
         <Router>
             <Navbar mobile={mobile} />

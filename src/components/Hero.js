@@ -1,7 +1,8 @@
 import React from "react";
 import HeroImage from "../assets/hero.png";
+import Logo from "../assets/logo.png";
 import Signup from "./Signup";
-import { Pane, Heading, Button, Paragraph } from "evergreen-ui";
+import { Pane, Heading, Button, Paragraph, Avatar } from "evergreen-ui";
 
 class Hero extends React.Component {
     render() {
@@ -11,9 +12,10 @@ class Hero extends React.Component {
                 display="flex"
                 paddingBottom="10vh"
                 justifyContent="center"
+                alignItems="center"
                 height={mobile ? "100vh" : "95vh"}
-                paddingRight="10vw"
-                paddingLeft="10vw"
+                paddingRight="40px"
+                paddingLeft="40px"
                 flexDirection={mobile ? "column" : "row"}
                 background="#6845c2"
             >
@@ -22,14 +24,17 @@ class Hero extends React.Component {
                     flexDirection="column"
                     justifyContent="center"
                     alignItems={mobile ? "center" : "flex-start"}
-                    width={mobile ? "100%" : "50vw"}
-                    paddingLeft="2vw"
-                    paddingRight="2vw"
+                    width={mobile ? "100%" : "800px"}
+                    paddingLeft="20px"
+                    paddingRight="20px"
                 >
+                    <Pane display={mobile ? "" : "none"} marginBottom="20px">
+                        <Avatar src={Logo} size={200} />
+                    </Pane>
                     <Pane textAlign={mobile ? "center" : ""} width="100%">
                         <Heading
                             size={900}
-                            fontSize={mobile ? "42px" : "64px"}
+                            fontSize={mobile ? "42px" : "90px"}
                             color="white"
                             lineHeight="95%"
                         >
@@ -38,12 +43,16 @@ class Hero extends React.Component {
                         <Paragraph
                             color="white"
                             size={500}
-                            fontSize="20px"
+                            fontSize={mobile ? "18px" : "24px"}
                             marginTop="10px"
                         >
                             Getting help with homework has never been so easy.
                         </Paragraph>
-                        <Heading color="#89CCFF" size={700} marginTop="5vh">
+                        <Heading
+                            color="#89CCFF"
+                            size={mobile ? 500 : 700}
+                            marginTop="5vh"
+                        >
                             Get involved by signing up for our closed beta
                             below.
                         </Heading>
@@ -51,7 +60,7 @@ class Hero extends React.Component {
                     <Pane width="100%" marginTop="10px">
                         <Signup
                             alignment={mobile ? "center" : "left"}
-                            width="50%"
+                            width="70%"
                         />
                     </Pane>
 
@@ -97,15 +106,16 @@ class Hero extends React.Component {
                 <Pane
                     display={mobile ? "none" : "flex"}
                     justifyContent="center"
-                    paddingLeft="2vw"
-                    paddingRight="2vw"
+                    paddingLeft="20px"
+                    paddingRight="20px"
                     alignItems="center"
+                    width="700px"
                 >
-                    <Pane borderRadius={3}>
+                    <Pane>
                         <img
                             src={HeroImage}
                             height="auto"
-                            width="700px"
+                            width="100%"
                             className="hero-image"
                             alt="Hero"
                         />

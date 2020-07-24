@@ -1,5 +1,5 @@
 import React from "react";
-import { Pane, Heading, Badge } from "evergreen-ui";
+import { Pane, Heading, Badge, majorScale } from "evergreen-ui";
 
 class TimelineEvent extends React.Component {
     render() {
@@ -16,7 +16,7 @@ class TimelineEvent extends React.Component {
                     {this.props.title}
                 </Heading>
                 <Pane>
-                    <Badge color="purple" marginTop={10}>
+                    <Badge color="purple" marginTop={10} size={majorScale(5)}>
                         {this.props.date}
                     </Badge>
                 </Pane>

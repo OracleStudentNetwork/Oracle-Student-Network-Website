@@ -18,7 +18,7 @@ AOS.init({
 });
 
 function Home() {
-    const mobile = useMediaQuery({ query: "(max-width: 800px)" });
+    const mobile = useMediaQuery({ query: "(max-width: 900px)" });
     return (
         <Pane>
             <ScrollableAnchor id={"hero"}>
