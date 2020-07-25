@@ -9,13 +9,6 @@ import Timeline from "../components/Timeline";
 import LearnMore from "../components/LearnMore";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init({
-    offset: 400,
-    once: true,
-    delay: 200,
-});
 
 function Home() {
     const mobile = useMediaQuery({ query: "(max-width: 900px)" });

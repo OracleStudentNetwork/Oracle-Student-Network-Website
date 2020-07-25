@@ -35,7 +35,6 @@ function InfoCard(props) {
             alignItems="center"
             marginBottom="12vh"
             flexDirection={mobile ? "column" : "row"}
-            data-aos="fade-up"
         >
             {card}
         </Pane>
