@@ -37,6 +37,7 @@ class Hero extends React.Component {
                             fontSize={mobile ? "42px" : "90px"}
                             color="white"
                             lineHeight="95%"
+                            fontWeight={1500}
                         >
                             Oracle Tutoring
                         </Heading>
