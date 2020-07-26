@@ -31,7 +31,7 @@ function InfoCard(props) {
     return (
         <Pane
             display="flex"
-            justifyContent="space-between"
+            justifyContent="space-around"
             alignItems="center"
             marginBottom="12vh"
             flexDirection={mobile ? "column" : "row"}
