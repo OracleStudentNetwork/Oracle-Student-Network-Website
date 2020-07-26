@@ -18,11 +18,7 @@ class Timeline extends React.Component {
                 textAlign="center"
                 minHeight="400px"
             >
-                <Heading
-                    size={900}
-                    fontSize={mobile ? "32px" : "48px"}
-                    color="#031b4e"
-                >
+                <Heading size={900} fontSize="48px" color="#031b4e">
                     Road Map
                 </Heading>
                 <Pane
@@ -33,6 +29,7 @@ class Timeline extends React.Component {
                         icon={<i class="fas fa-user fa-3x"></i>}
                         title="Start of Pilot Program"
                         date="2020 April 15th"
+                        complete={true}
                     />
                     <TimelineEvent
                         icon={<i class="fas fa-layer-group fa-3x"></i>}

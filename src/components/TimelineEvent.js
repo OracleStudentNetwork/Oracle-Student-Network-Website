@@ -1,5 +1,5 @@
 import React from "react";
-import { Pane, Heading, Badge } from "evergreen-ui";
+import { Pane, Heading, Badge, TickCircleIcon } from "evergreen-ui";
 
 class TimelineEvent extends React.Component {
     render() {
@@ -14,9 +14,17 @@ class TimelineEvent extends React.Component {
                 <Pane color="#6845c2">{this.props.icon}</Pane>
                 <Heading size={700} marginTop={10} color="#031b4e">
                     {this.props.title}
+                    <TickCircleIcon
+                        color="success"
+                        display={this.props.complete ? "" : "none"}
+                        marginLeft={8}
+                    />
                 </Heading>
                 <Pane>
-                    <Badge color="purple" marginTop={10}>
+                    <Badge
+                        color={this.props.complete ? "blue" : "purple"}
+                        marginTop={10}
+                    >
                         {this.props.date}
                     </Badge>
                 </Pane>
