@@ -14,11 +14,7 @@ function Home() {
     const mobile = useMediaQuery({ query: "(max-width: 900px)" });
     return (
         <Pane>
-            <ScrollableAnchor id={"hero"}>
-                <div>
-                    <Hero mobile={mobile} />
-                </div>
-            </ScrollableAnchor>
+            <Hero mobile={mobile} />
             <ScrollableAnchor id={"mission"}>
                 <div>
                     <Mission mobile={mobile} />
