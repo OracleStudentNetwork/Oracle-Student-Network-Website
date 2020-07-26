@@ -29,7 +29,7 @@ class Hero extends React.Component {
                     paddingRight="20px"
                 >
                     <Pane display={mobile ? "" : "none"} marginBottom="20px">
-                        <Avatar src={Logo} size={200} />
+                        <Avatar src={Logo} size={180} />
                     </Pane>
                     <Pane textAlign={mobile ? "center" : ""} width="100%">
                         <Heading
