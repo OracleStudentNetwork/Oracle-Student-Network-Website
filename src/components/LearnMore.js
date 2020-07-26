@@ -14,6 +14,7 @@ function LearnMore() {
             paddingBottom="5em"
             paddingRight="15vw"
             paddingLeft="15vw"
+            background="#f3f5f9"
         >
             <InfoCard
                 title="Join Our Team"
