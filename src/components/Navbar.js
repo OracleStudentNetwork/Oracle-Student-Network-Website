@@ -13,7 +13,7 @@ class Navbar extends React.Component {
                     alignItems: this.props.mobile ? "flex-start" : "",
                 }}
             >
-                <a href="/#hero" style={{ marginLeft: "1vw" }}>
+                <a href="/" style={{ marginLeft: "1vw" }}>
                     <img src={Logo} alt="logo" width="auto" height="40px"></img>
                 </a>
                 <ul className="navbar-links">
