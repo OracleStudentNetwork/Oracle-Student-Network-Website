@@ -18,7 +18,7 @@ function Services(props) {
             <Pane>
                 <Heading
                     size={900}
-                    fontSize={mobile ? "32px" : "48px"}
+                    fontSize="48px"
                     color="#031b4e"
                     textAlign="center"
                 >
