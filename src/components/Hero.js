@@ -2,7 +2,7 @@ import React from "react";
 import HeroImage from "../assets/hero.png";
 import Logo from "../assets/logo.png";
 import Signup from "./Signup";
-import { Pane, Heading, Button, Paragraph, Avatar } from "evergreen-ui";
+import { Pane, Heading, Button, Paragraph, Avatar, Text } from "evergreen-ui";
 
 class Hero extends React.Component {
     render() {
@@ -17,7 +17,7 @@ class Hero extends React.Component {
                 paddingRight="40px"
                 paddingLeft="40px"
                 flexDirection={mobile ? "column" : "row"}
-                background="#6845c2"
+                backgroundImage="linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% )"
             >
                 <Pane
                     display="flex"
@@ -34,10 +34,10 @@ class Hero extends React.Component {
                     <Pane textAlign={mobile ? "center" : ""} width="100%">
                         <Heading
                             size={900}
-                            fontSize={mobile ? "42px" : "90px"}
+                            fontSize={mobile ? "42px" : "72px"}
                             color="white"
                             lineHeight="95%"
-                            fontWeight={1500}
+                            marginBottom="40px"
                         >
                             Oracle Tutoring
                         </Heading>
@@ -47,7 +47,7 @@ class Hero extends React.Component {
                             fontSize={mobile ? "18px" : "24px"}
                             marginTop="10px"
                         >
-                            Getting help with homework has never been so easy.
+                            Getting help with homework has never been so easy.{" "}
                         </Paragraph>
                         <Heading
                             color="#89CCFF"

@@ -26,28 +26,34 @@ class Timeline extends React.Component {
                     flexDirection={this.props.mobile ? "column" : "row"}
                 >
                     <TimelineEvent
-                        icon={<i class="fas fa-user fa-3x"></i>}
+                        icon={<i class="fas fa-user fa-3x fa-gradient"></i>}
                         title="Start of Pilot Program"
                         date="2020 April 15th"
                         complete={true}
                     />
                     <TimelineEvent
-                        icon={<i class="fas fa-layer-group fa-3x"></i>}
+                        icon={
+                            <i class="fas fa-layer-group fa-3x fa-gradient"></i>
+                        }
                         title="Plugin Development"
                         date="2020 July 4th"
                     />
                     <TimelineEvent
-                        icon={<i class="fas fa-lock fa-3x"></i>}
+                        icon={<i class="fas fa-lock fa-3x fa-gradient"></i>}
                         title="Closed Beta"
                         date="2020 July 22nd"
                     />
                     <TimelineEvent
-                        icon={<i class="fas fa-user-check fa-3x"></i>}
+                        icon={
+                            <i class="fas fa-user-check fa-3x fa-gradient"></i>
+                        }
                         title="Further Development"
                         date="2020 August"
                     />
                     <TimelineEvent
-                        icon={<i class="fab fa-canadian-maple-leaf fa-3x"></i>}
+                        icon={
+                            <i class="fab fa-canadian-maple-leaf fa-3x fa-gradient"></i>
+                        }
                         title="Soft Launch to Ontario"
                         date="2020 September 1st"
                     />

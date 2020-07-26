@@ -48,9 +48,7 @@ function Services(props) {
                         marginTop="10vh"
                         marginRight={mobile ? "" : "3vw"}
                     >
-                        <Pane color="#6845c2">
-                            <i class="fas fa-broadcast-tower fa-2x"></i>
-                        </Pane>
+                        <i class="fas fa-broadcast-tower fa-2x fa-gradient"></i>
                         <Heading size={700} color="#031b4e" marginTop="2vh">
                             Live Virtual Tutoring
                         </Heading>
@@ -65,10 +63,7 @@ function Services(props) {
                         marginLeft={mobile ? "" : "3vw"}
                         marginRight={mobile ? "" : "3vw"}
                     >
-                        <Pane color="#6845c2">
-                            <i class="far fa-calendar-check fa-2x"></i>
-                        </Pane>
-
+                        <i class="far fa-calendar-check fa-2x fa-gradient"></i>
                         <Heading size={700} color="#031b4e" marginTop="2vh">
                             Community Events
                         </Heading>
@@ -83,9 +78,7 @@ function Services(props) {
                         marginTop="10vh"
                         marginLeft={mobile ? "" : "3vw"}
                     >
-                        <Pane color="#6845c2">
-                            <i class="fas fa-hammer fa-2x"></i>
-                        </Pane>
+                        <i class="fas fa-hammer fa-2x fa-gradient"></i>
                         <Heading size={700} color="#031b4e" marginTop="2vh">
                             Workshops
                         </Heading>

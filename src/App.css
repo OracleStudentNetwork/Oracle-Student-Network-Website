@@ -68,3 +68,13 @@ nav {
     margin-bottom: 5px;
     color: white;
 }
+
+.fa-gradient {
+    background: linear-gradient(
+        135.9deg,
+        rgba(109, 25, 252, 1) 16.4%,
+        rgba(125, 31, 165, 1) 56.1%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
