@@ -38,6 +38,7 @@ class Hero extends React.Component {
                             color="white"
                             lineHeight="95%"
                             marginBottom="40px"
+                            fontWeight={1500}
                         >
                             Oracle Tutoring
                         </Heading>
