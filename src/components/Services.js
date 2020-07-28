@@ -85,7 +85,7 @@ function Services(props) {
 
                         <Paragraph color="#5b6987" size={500} marginTop="2vh">
                             Oracle will host daily workshops on extracurricular
-                            topics lead by talented and motivated youth
+                            topics led by talented and motivated youth
                             instructors.
                         </Paragraph>
                         <Badge color="purple" marginTop="8px">
