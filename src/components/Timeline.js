@@ -37,6 +37,7 @@ class Timeline extends React.Component {
                         }
                         title="Plugin Development"
                         date="2020 July 4th"
+                        complete={true}
                     />
                     <TimelineEvent
                         icon={<i class="fas fa-lock fa-3x fa-gradient"></i>}
