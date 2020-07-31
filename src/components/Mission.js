@@ -14,14 +14,19 @@ class Mission extends React.Component {
                 paddingTop="15vh"
                 paddingBottom="15vh"
             >
-                <Heading size={900} fontSize="48px" color="#031b4e">
+                <Heading
+                    size={900}
+                    fontSize="48px"
+                    fontWeight={1500}
+                    color="#212121"
+                >
                     Our Mission
                 </Heading>
 
                 <Pane marginTop="4vh">
                     <Paragraph
                         size={500}
-                        fontSize="18px"
+                        fontSize={mobile ? "18px" : "20px"}
                         lineHeight="28px"
                         color="#5b6987"
                     >

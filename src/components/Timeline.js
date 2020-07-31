@@ -18,7 +18,12 @@ class Timeline extends React.Component {
                 textAlign="center"
                 minHeight="400px"
             >
-                <Heading size={900} fontSize="48px" color="#031b4e">
+                <Heading
+                    size={900}
+                    fontWeight={1500}
+                    fontSize="48px"
+                    color="#212121"
+                >
                     Road Map
                 </Heading>
                 <Pane

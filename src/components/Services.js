@@ -18,15 +18,16 @@ function Services(props) {
             <Pane>
                 <Heading
                     size={900}
+                    fontWeight={1500}
                     fontSize="48px"
-                    color="#031b4e"
+                    color="#212121"
                     textAlign="center"
                 >
                     What We Do
                 </Heading>
                 <Paragraph
                     size={500}
-                    fontSize="18px"
+                    fontSize={mobile ? "18px" : "20px"}
                     lineHeight="28px"
                     color="#5b6987"
                     marginTop="5vh"
@@ -49,7 +50,7 @@ function Services(props) {
                         marginRight={mobile ? "" : "3vw"}
                     >
                         <i class="fas fa-broadcast-tower fa-2x fa-gradient"></i>
-                        <Heading size={700} color="#031b4e" marginTop="2vh">
+                        <Heading size={700} color="#212121" marginTop="2vh">
                             Live Virtual Tutoring
                         </Heading>
                         <Paragraph color="#5b6987" size={500} marginTop="2vh">
@@ -64,7 +65,7 @@ function Services(props) {
                         marginRight={mobile ? "" : "3vw"}
                     >
                         <i class="far fa-calendar-check fa-2x fa-gradient"></i>
-                        <Heading size={700} color="#031b4e" marginTop="2vh">
+                        <Heading size={700} color="#212121" marginTop="2vh">
                             Community Events
                         </Heading>
                         <Paragraph color="#5b6987" size={500} marginTop="2vh">
@@ -79,7 +80,7 @@ function Services(props) {
                         marginLeft={mobile ? "" : "3vw"}
                     >
                         <i class="fas fa-hammer fa-2x fa-gradient"></i>
-                        <Heading size={700} color="#031b4e" marginTop="2vh">
+                        <Heading size={700} color="#212121" marginTop="2vh">
                             Workshops
                         </Heading>
 

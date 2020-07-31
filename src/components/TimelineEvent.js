@@ -12,7 +12,7 @@ class TimelineEvent extends React.Component {
                 width="100%"
             >
                 {this.props.icon}
-                <Heading size={700} marginTop={10} color="#031b4e">
+                <Heading size={700} marginTop={10} color="#212121">
                     {this.props.title}
                     <TickCircleIcon
                         color="success"

@@ -10,7 +10,7 @@ class Footer extends React.Component {
                 paddingLeft="15vw"
                 paddingTop="5vh"
                 paddingBottom="5vh"
-                background="#222"
+                background="#212121"
                 minHeight="60vh"
                 borderTop="1px white solid"
             >

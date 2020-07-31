@@ -8,7 +8,7 @@ class Contact extends React.Component {
     render() {
         return (
             <Pane
-                background="#222"
+                background="#212121"
                 paddingTop="15vh"
                 paddingBottom="10vh"
                 paddingRight="15vw"
@@ -21,7 +21,12 @@ class Contact extends React.Component {
             >
                 <Pane>
                     <Pane textAlign="center" flexGrow="1">
-                        <Heading color="white" size={900} marginBottom="5vh">
+                        <Heading
+                            color="white"
+                            size={900}
+                            fontWeight={1500}
+                            marginBottom="5vh"
+                        >
                             Sign up for our closed-beta!
                         </Heading>
                         <Signup alignment="center" />
