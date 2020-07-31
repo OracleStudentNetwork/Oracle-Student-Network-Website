@@ -19,7 +19,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 16px;
+    padding: 14px;
     position: sticky;
     top: 0;
     background: white;
@@ -39,7 +39,7 @@ nav {
 .navbar-links a {
     margin-left: 20px;
     margin-right: 20px;
-    color: #031b4e;
+    color: #212121;
 }
 
 .social-logos {
