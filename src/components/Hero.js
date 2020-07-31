@@ -14,8 +14,8 @@ class Hero extends React.Component {
                 justifyContent="center"
                 alignItems="center"
                 height={mobile ? "100vh" : "95vh"}
-                paddingRight="40px"
-                paddingLeft="40px"
+                paddingRight="20px"
+                paddingLeft="20px"
                 flexDirection={mobile ? "column" : "row"}
                 // backgroundColor="#6f42c1"
                 // backgroundImage="linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% )"
@@ -29,7 +29,7 @@ class Hero extends React.Component {
                     paddingLeft="20px"
                     paddingRight="20px"
                 >
-                    <Pane display={mobile ? "" : "none"} marginBottom="20px">
+                    <Pane display={mobile ? "" : "none"} marginTop="20px">
                         <Avatar src={Logo} size={180} />
                     </Pane>
                     <Pane textAlign={mobile ? "center" : ""} width="100%">
@@ -66,7 +66,8 @@ class Hero extends React.Component {
                     <Pane width="100%" marginTop="10px">
                         <Signup
                             alignment={mobile ? "center" : "left"}
-                            width="50%"
+                            width={mobile ? "100%" : "50%"}
+                            mobile={mobile}
                         />
                     </Pane>
 

@@ -12,8 +12,8 @@ function LearnMore() {
             flexDirection="column"
             paddingTop="10vh"
             paddingBottom="5em"
-            paddingRight="15vw"
-            paddingLeft="15vw"
+            paddingRight="10vw"
+            paddingLeft="10vw"
             background="#f3f5f9"
         >
             <InfoCard

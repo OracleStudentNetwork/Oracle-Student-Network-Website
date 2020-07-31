@@ -7,8 +7,8 @@ function Services(props) {
         <Pane
             paddingTop="15vh"
             paddingBottom="15vh"
-            paddingRight="15vw"
-            paddingLeft="15vw"
+            paddingRight="10vw"
+            paddingLeft="10vw"
             display="flex"
             flexDirection={mobile ? "column" : "row"}
             justifyContent="center"

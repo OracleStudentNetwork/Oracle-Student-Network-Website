@@ -11,8 +11,8 @@ class Contact extends React.Component {
                 background="#212121"
                 paddingTop="15vh"
                 paddingBottom="10vh"
-                paddingRight="15vw"
-                paddingLeft="15vw"
+                paddingRight="10vw"
+                paddingLeft="10vw"
                 textAlign="center"
                 display="flex"
                 flexDirection="column"
@@ -29,7 +29,11 @@ class Contact extends React.Component {
                         >
                             Sign up for our closed-beta!
                         </Heading>
-                        <Signup alignment="center" />
+                        <Signup
+                            alignment="center"
+                            width={this.props.mobile ? "100%" : "50%"}
+                            mobile={this.props.mobile}
+                        />
                     </Pane>
                     {/* <Heading
                         size={900}

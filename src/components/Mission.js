@@ -10,8 +10,8 @@ class Mission extends React.Component {
         return (
             <Pane
                 textAlign="center"
-                paddingRight="15vw"
-                paddingLeft="15vw"
+                paddingRight="10vw"
+                paddingLeft="10vw"
                 paddingTop="15vh"
                 paddingBottom="15vh"
                 backgroundColor="#212121"

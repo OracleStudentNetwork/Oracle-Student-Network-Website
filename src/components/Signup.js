@@ -78,7 +78,7 @@ class Signup extends React.Component {
             <Pane textAlign={this.props.alignment}>
                 <Pane
                     display="flex"
-                    flexDirection="row"
+                    flexDirection={this.props.mobile ? "column" : "row"}
                     justifyContent={this.props.alignment}
                     width="100%"
                 >
@@ -98,6 +98,7 @@ class Signup extends React.Component {
                         onClick={this.writeToDataBase}
                         height={42}
                         minWidth={130}
+                        marginTop={this.props.mobile ? "10px" : ""}
                     >
                         Sign Up
                     </Button>

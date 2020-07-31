@@ -11,8 +11,8 @@ class Timeline extends React.Component {
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-between"
-                paddingLeft="15vw"
-                paddingRight="15vw"
+                paddingLeft="10vw"
+                paddingRight="10vw"
                 paddingTop="15vh"
                 paddingBottom="15vh"
                 textAlign="center"
@@ -73,7 +73,11 @@ class Timeline extends React.Component {
                     </Heading>
                     <Pane>
                         <Pane marginTop="3vh" width="100%">
-                            <Signup alignment="center" width="30%" />
+                            <Signup
+                                alignment="center"
+                                width={mobile ? "100%" : "30%"}
+                                mobile={mobile}
+                            />
                         </Pane>
                     </Pane>
                 </Pane>
