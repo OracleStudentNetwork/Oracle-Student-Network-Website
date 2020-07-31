@@ -10,8 +10,10 @@ class Signup extends React.Component {
         super(props);
         this.state = {
             email: "",
+            valid: false,
             lastSubmission: Date.now() - 5000,
         };
+        this.validator = require("email-validator");
         if (!Firebase.apps.length) {
             Firebase.initializeApp(Config);
             Firebase.analytics();
@@ -23,6 +25,7 @@ class Signup extends React.Component {
         const { name, value } = event.target;
         this.setState({
             [name]: value,
+            valid: this.validator.validate(value),
         });
     }
     writeToDataBase() {
@@ -44,6 +47,10 @@ class Signup extends React.Component {
         today = dd + "/" + mm + "/" + yyyy;
         if (timeElapsed < 5) {
             toaster.warning("You can only only sign up once every 5 seconds");
+            return;
+        }
+        if (!this.state.valid) {
+            toaster.warning("You must input a valid email address!");
             return;
         }
         Firebase.database()
