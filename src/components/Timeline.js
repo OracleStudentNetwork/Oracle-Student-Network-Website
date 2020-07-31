@@ -68,7 +68,7 @@ class Timeline extends React.Component {
                     <hr className="heading-bar"></hr>
                 </Pane>
                 <Pane textAlign="center" marginTop="5vh">
-                    <Heading size={mobile ? 600 : 700} color="#031b4e">
+                    <Heading size={mobile ? 600 : 700} color="#212121">
                         Sign up for our closed-beta and hear the latest news.
                     </Heading>
                     <Pane>
