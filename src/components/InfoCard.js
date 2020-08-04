@@ -9,16 +9,7 @@ function InfoCard(props) {
             <Heading size={900} textAlign="left" color="#212121">
                 {props.title}
             </Heading>
-            <Paragraph
-                size={500}
-                marginTop="1em"
-                textAlign="left"
-                fontSize={mobile ? "18px" : "20px"}
-                lineHeight="28px"
-                color="#5b6987"
-            >
-                {props.content}
-            </Paragraph>
+            {props.content}
         </Pane>
     );
     const img = (
