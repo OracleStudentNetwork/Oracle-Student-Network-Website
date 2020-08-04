@@ -1,5 +1,5 @@
 import React from "react";
-import { Pane, Heading, Text, Link } from "evergreen-ui";
+import { Pane, Heading, Text, Link, Paragraph } from "evergreen-ui";
 import Logo from "../assets/logo_transparent.png";
 
 class Footer extends React.Component {
@@ -24,24 +24,24 @@ class Footer extends React.Component {
                             About Us
                         </Heading>
                         <a href="/#mission" className="footer-links">
-                            <Heading color="white" size={500}>
+                            <Paragraph color="white" size={500}>
                                 Our Mission
-                            </Heading>
+                            </Paragraph>
                         </a>
                         <a href="/#services" className="footer-links">
-                            <Heading color="white" size={500}>
+                            <Paragraph color="white" size={500}>
                                 What We Do
-                            </Heading>
+                            </Paragraph>
                         </a>
                         <a href="/#learn-more" className="footer-links">
-                            <Heading color="white" size={500}>
+                            <Paragraph color="white" size={500}>
                                 Learn More
-                            </Heading>
+                            </Paragraph>
                         </a>
                         <a href="/#contact" className="footer-links">
-                            <Heading color="white" size={500}>
+                            <Paragraph color="white" size={500}>
                                 Contact Us
-                            </Heading>
+                            </Paragraph>
                         </a>
                     </Pane>
                     {/* <Pane display="flex" flexDirection="column">
@@ -60,7 +60,7 @@ class Footer extends React.Component {
                         border: "0px",
                         borderTop: "1px white solid",
                         opacity: "0.5",
-                        marginTop: "48px",
+                        marginTop: "32px",
                     }}
                 ></hr>
                 <Pane
@@ -81,7 +81,7 @@ class Footer extends React.Component {
                     </Pane>
                     <Pane
                         textAlign="right"
-                        marginTop={this.props.mobile ? "2vh" : ""}
+                        marginTop={this.props.mobile ? "5vh" : ""}
                     >
                         <Pane display="flex" justifyContent="center">
                             <a
