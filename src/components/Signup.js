@@ -3,7 +3,8 @@ import Config from "./Config";
 import Firebase from "firebase/app";
 import "firebase/database";
 import "firebase/analytics";
-import { Pane, TextInput, Button, toaster } from "evergreen-ui";
+import { Pane, TextInput, toaster } from "evergreen-ui";
+import { Button, Input } from "@chakra-ui/core";
 
 class Signup extends React.Component {
     constructor(props) {
@@ -82,21 +83,19 @@ class Signup extends React.Component {
                     justifyContent={this.props.alignment}
                     width="100%"
                 >
-                    <TextInput
+                    <Input
+                        size="lg"
                         width={this.props.width}
                         minWidth="150px"
                         name="email"
                         value={this.state.email}
                         onChange={this.updateEmail}
                         placeholder="someone@example.com"
-                        height={42}
                     />
                     <Button
-                        iconAfter="envelope"
-                        appearance="primary"
-                        intent="default"
+                        variantColor="purple"
+                        size="lg"
                         onClick={this.writeToDataBase}
-                        height={42}
                         minWidth={130}
                         marginTop={this.props.mobile ? "10px" : ""}
                     >
