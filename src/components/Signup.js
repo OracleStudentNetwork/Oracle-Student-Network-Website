@@ -1,5 +1,5 @@
 import React from "react";
-import Config from "./Config";
+import Config from "../util/Config";
 import Firebase from "firebase/app";
 import "firebase/database";
 import "firebase/analytics";
