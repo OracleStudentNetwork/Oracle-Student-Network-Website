@@ -91,8 +91,10 @@ class Signup extends React.Component {
                         value={this.state.email}
                         onChange={this.updateEmail}
                         placeholder="someone@example.com"
-                        borderTopRightRadius="none"
-                        borderBottomRightRadius="none"
+                        borderTopRightRadius={this.props.mobile ? "" : "none"}
+                        borderBottomRightRadius={
+                            this.props.mobile ? "" : "none"
+                        }
                     />
                     <Button
                         variantColor="purple"
@@ -100,8 +102,8 @@ class Signup extends React.Component {
                         onClick={this.writeToDataBase}
                         minWidth={130}
                         marginTop={this.props.mobile ? "10px" : ""}
-                        borderTopLeftRadius="none"
-                        borderBottomLeftRadius="none"
+                        borderTopLeftRadius={this.props.mobile ? "" : "none"}
+                        borderBottomLeftRadius={this.props.mobile ? "" : "none"}
                     >
                         Sign Up
                     </Button>
