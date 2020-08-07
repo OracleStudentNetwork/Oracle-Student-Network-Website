@@ -1,5 +1,6 @@
 import React from "react";
 import { Heading } from "evergreen-ui";
+import { Image } from "@chakra-ui/core";
 import Logo from "../assets/nav_logo.png";
 
 class Navbar extends React.Component {
@@ -14,7 +15,7 @@ class Navbar extends React.Component {
                 }}
             >
                 <a href="/" style={{ marginLeft: "1vw" }}>
-                    <img src={Logo} alt="logo" width="auto" height="40px"></img>
+                    <Image src={Logo} alt="logo" width="auto" height="40px" />
                 </a>
                 <ul className="navbar-links">
                     <Heading size={500}>

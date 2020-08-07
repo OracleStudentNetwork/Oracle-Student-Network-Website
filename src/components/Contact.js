@@ -1,5 +1,6 @@
 import React from "react";
 import { Pane, Paragraph, Heading } from "evergreen-ui";
+import { Image } from "@chakra-ui/core";
 import Appstore from "../assets/appstore.svg";
 import Playstore from "../assets/playstore.png";
 import Signup from "./Signup";
@@ -62,7 +63,7 @@ class Contact extends React.Component {
                             rel="noopener noreferrer"
                             target="_blank"
                         >
-                            <img src={Appstore} alt="Get it on App Store"></img>
+                            <Image src={Appstore} alt="Get it on App Store" />
                         </a>
                     </Pane>
                     <Pane margin={10}>
@@ -71,7 +72,7 @@ class Contact extends React.Component {
                             rel="noopener noreferrer"
                             target="_blank"
                         >
-                            <img
+                            <Image
                                 height="40px"
                                 alt="Get it on Google Play"
                                 src={Playstore}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Pane, Heading, Text, Link, Paragraph } from "evergreen-ui";
+import { Image } from "@chakra-ui/core";
 import Logo from "../assets/logo_transparent.png";
 
 class Footer extends React.Component {
@@ -74,7 +75,7 @@ class Footer extends React.Component {
                         alignItems="center"
                         justifyContent="center"
                     >
-                        <img src={Logo} height="30px" />
+                        <Image src={Logo} height="30px" />
                         <Text color="white" size={500} marginLeft="16px">
                             info@osn-reo.org
                         </Text>
