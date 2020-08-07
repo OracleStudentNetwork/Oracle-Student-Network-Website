@@ -1,6 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Pane, Paragraph, Link } from "evergreen-ui";
+import { Pane } from "evergreen-ui";
+import { Text, Link, Icon } from "@chakra-ui/core";
 import InfoCard from "./InfoCard";
 import Vault from "../assets/vault.svg";
 import Terms from "../assets/terms.svg";
@@ -9,11 +10,10 @@ import Team from "../assets/team.svg";
 function LearnMore() {
     const mobile = useMediaQuery({ query: "(max-width: 680px)" });
     const team = (
-        <Paragraph
-            size={500}
+        <Text
             marginTop="1em"
             textAlign="left"
-            fontSize={mobile ? "18px" : "20px"}
+            fontSize="18px"
             lineHeight="28px"
             color="#5b6987"
         >
@@ -22,20 +22,21 @@ function LearnMore() {
             tutors, instructors, moderators, and developers.{" "}
             <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLScbDPN5zFmR-B0wLHDYEDIM4Moctt-2JATirh8ejLkHZrizkA/viewform?usp=sf_link"
-                fontSize={mobile ? "18px" : "20px"}
+                fontSize="18px"
                 target="_blank"
+                isExternal
                 rel="noopener noreferrer"
             >
                 Sign up here
+                <Icon name="external-link" mx="2px" />
             </Link>
-        </Paragraph>
+        </Text>
     );
     const policy = (
-        <Paragraph
-            size={500}
+        <Text
             marginTop="1em"
             textAlign="left"
-            fontSize={mobile ? "18px" : "20px"}
+            fontSize="18px"
             lineHeight="28px"
             color="#5b6987"
         >
@@ -43,20 +44,19 @@ function LearnMore() {
             honesty. Our volunteer tutors are instructed to guide a student’s
             thinking in the right direction. We do not write essays and tests;
             we provide peer editing, brainstorming feedback, and homework help.
-        </Paragraph>
+        </Text>
     );
     const donate = (
-        <Paragraph
-            size={500}
+        <Text
             marginTop="1em"
             textAlign="left"
-            fontSize={mobile ? "18px" : "20px"}
+            fontSize="18px"
             lineHeight="28px"
             color="#5b6987"
         >
             Oracle Tutoring offers all of its services completely free of
             charge. We rely on donations and grants to sustain our operations.
-        </Paragraph>
+        </Text>
     );
     return (
         <Pane

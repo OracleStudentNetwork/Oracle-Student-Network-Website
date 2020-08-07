@@ -1,6 +1,6 @@
 import React from "react";
-import { Pane, Paragraph, Heading } from "evergreen-ui";
-import { Image } from "@chakra-ui/core";
+import { Pane, Paragraph } from "evergreen-ui";
+import { Image, Heading } from "@chakra-ui/core";
 import Appstore from "../assets/appstore.svg";
 import Playstore from "../assets/playstore.png";
 import Signup from "./Signup";
@@ -22,12 +22,7 @@ class Contact extends React.Component {
             >
                 <Pane>
                     <Pane textAlign="center" flexGrow="1">
-                        <Heading
-                            color="white"
-                            size={900}
-                            fontWeight={1500}
-                            marginBottom="5vh"
-                        >
+                        <Heading color="white" size="xl" marginBottom="5vh">
                             Sign up for our closed-beta!
                         </Heading>
                         <Signup
