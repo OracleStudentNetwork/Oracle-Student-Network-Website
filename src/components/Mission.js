@@ -37,7 +37,7 @@ class Mission extends React.Component {
                     display={mobile ? "none" : "flex"}
                     justifyContent="center"
                 >
-                    <img src={Discord} width="800px"></img>
+                    <img src={Discord} width="800px" height="auto"></img>
                 </Box>
                 {/* <Box display="flex" justifyContent="center">
                     <hr className="heading-bar"></hr>
