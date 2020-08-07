@@ -72,7 +72,7 @@ class Hero extends React.Component {
                         <img
                             src={HeroImage}
                             height="auto"
-                            width="100%"
+                            width="80%"
                             alt="Hero"
                         />
                     </Box>
