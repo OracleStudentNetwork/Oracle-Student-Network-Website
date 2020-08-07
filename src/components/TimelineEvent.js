@@ -15,7 +15,12 @@ class TimelineEvent extends React.Component {
                 {this.props.icon}
                 <Heading size="md" marginTop={4} color="#212121">
                     {this.props.title}
-                    <Icon name="check" marginLeft={2} color="purple.500" />
+                    <Icon
+                        name="check"
+                        marginLeft={2}
+                        color="purple.500"
+                        display={this.props.complete ? "inline-block" : "none"}
+                    />
                 </Heading>
                 <Pane>
                     <Badge
