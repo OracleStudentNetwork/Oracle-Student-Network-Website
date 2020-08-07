@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Heading, Link } from "@chakra-ui/core";
+import { Image, Link } from "@chakra-ui/core";
 import Logo from "../assets/nav_logo.png";
 
 class Navbar extends React.Component {
@@ -22,11 +22,6 @@ class Navbar extends React.Component {
                     <Link href="/#roadmap">Road Map</Link>
                     <Link href="/#learn-more">Learn more</Link>
                     <Link href="/#contact">Contact Us</Link>
-                    {/* <Heading size={500}>
-                        <li>
-                            <a href="terms">Terms</a>
-                        </li>
-                    </Heading> */}
                 </ul>
             </nav>
         );

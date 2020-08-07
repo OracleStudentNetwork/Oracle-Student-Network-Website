@@ -1,14 +1,13 @@
 import React from "react";
 import TimelineEvent from "./TimelineEvent";
 import Signup from "./Signup";
-import { Pane } from "evergreen-ui";
-import { Heading } from "@chakra-ui/core";
+import { Heading, Box } from "@chakra-ui/core";
 
 class Timeline extends React.Component {
     render() {
         const mobile = this.props.mobile;
         return (
-            <Pane
+            <Box
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-between"
@@ -22,7 +21,7 @@ class Timeline extends React.Component {
                 <Heading fontSize="48px" color="#212121">
                     Road Map
                 </Heading>
-                <Pane
+                <Box
                     display="flex"
                     flexDirection={this.props.mobile ? "column" : "row"}
                 >
@@ -59,25 +58,25 @@ class Timeline extends React.Component {
                         title="Soft Launch to Ontario"
                         date="2020 September 1st"
                     />
-                </Pane>
-                <Pane display="flex" justifyContent="center">
+                </Box>
+                <Box display="flex" justifyContent="center">
                     <hr className="heading-bar"></hr>
-                </Pane>
-                <Pane textAlign="center" marginTop="5vh">
+                </Box>
+                <Box textAlign="center" marginTop="5vh">
                     <Heading size="lg" color="#212121">
                         Sign up for our closed-beta and hear the latest news.
                     </Heading>
-                    <Pane>
-                        <Pane marginTop="3vh" width="100%">
+                    <Box>
+                        <Box marginTop="3vh" width="100%">
                             <Signup
                                 alignment="center"
                                 width={mobile ? "100%" : "30%"}
                                 mobile={mobile}
                             />
-                        </Pane>
-                    </Pane>
-                </Pane>
-            </Pane>
+                        </Box>
+                    </Box>
+                </Box>
+            </Box>
         );
     }
 }

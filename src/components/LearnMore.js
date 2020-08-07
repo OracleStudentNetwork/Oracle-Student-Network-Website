@@ -1,7 +1,6 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Pane } from "evergreen-ui";
-import { Text, Link, Icon } from "@chakra-ui/core";
+import { Text, Link, Icon, Box } from "@chakra-ui/core";
 import InfoCard from "./InfoCard";
 import Vault from "../assets/vault.svg";
 import Terms from "../assets/terms.svg";
@@ -59,7 +58,7 @@ function LearnMore() {
         </Text>
     );
     return (
-        <Pane
+        <Box
             display="flex"
             flexDirection="column"
             paddingTop="10vh"
@@ -89,7 +88,7 @@ function LearnMore() {
                 alt="Donate"
                 reverse={false}
             />
-        </Pane>
+        </Box>
     );
 }
 

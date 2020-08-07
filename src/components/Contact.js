@@ -1,6 +1,5 @@
 import React from "react";
-import { Pane, Paragraph } from "evergreen-ui";
-import { Image, Heading } from "@chakra-ui/core";
+import { Image, Heading, Box, Text } from "@chakra-ui/core";
 import Appstore from "../assets/appstore.svg";
 import Playstore from "../assets/playstore.png";
 import Signup from "./Signup";
@@ -8,7 +7,7 @@ import Signup from "./Signup";
 class Contact extends React.Component {
     render() {
         return (
-            <Pane
+            <Box
                 background="#212121"
                 paddingTop="15vh"
                 paddingBottom="10vh"
@@ -20,8 +19,8 @@ class Contact extends React.Component {
                 minHeight="40vh"
                 justifyContent="space-between"
             >
-                <Pane>
-                    <Pane textAlign="center" flexGrow="1">
+                <Box>
+                    <Box textAlign="center" flexGrow="1">
                         <Heading color="white" size="xl" marginBottom="5vh">
                             Sign up for our closed-beta!
                         </Heading>
@@ -30,7 +29,7 @@ class Contact extends React.Component {
                             width={this.props.mobile ? "100%" : "50%"}
                             mobile={this.props.mobile}
                         />
-                    </Pane>
+                    </Box>
                     {/* <Heading
                         size={900}
                         fontSize={this.props.mobile ? "32px" : "48px"}
@@ -50,9 +49,9 @@ class Contact extends React.Component {
                             Join our Discord
                         </Button>
                     </a> */}
-                </Pane>
-                <Pane display="flex" marginTop="2em" justifyContent="center">
-                    <Pane margin={10}>
+                </Box>
+                <Box display="flex" marginTop="2em" justifyContent="center">
+                    <Box margin={10}>
                         <a
                             href="https://apps.apple.com/us/app/discord-chat-for-games/id985746746"
                             rel="noopener noreferrer"
@@ -60,8 +59,8 @@ class Contact extends React.Component {
                         >
                             <Image src={Appstore} alt="Get it on App Store" />
                         </a>
-                    </Pane>
-                    <Pane margin={10}>
+                    </Box>
+                    <Box margin={10}>
                         <a
                             href="https://play.google.com/store/apps/details?id=com.discord&hl=en_CA&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
                             rel="noopener noreferrer"
@@ -73,15 +72,15 @@ class Contact extends React.Component {
                                 src={Playstore}
                             />
                         </a>
-                    </Pane>
-                </Pane>
-                <Pane>
-                    <Paragraph color="white">
+                    </Box>
+                </Box>
+                <Box>
+                    <Text color="white">
                         If you’re on mobile, we highly recommend the Discord
                         app, found on all major app stores.
-                    </Paragraph>
-                </Pane>
-            </Pane>
+                    </Text>
+                </Box>
+            </Box>
         );
     }
 }

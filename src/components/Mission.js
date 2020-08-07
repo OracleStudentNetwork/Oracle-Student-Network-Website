@@ -1,6 +1,5 @@
 import React from "react";
-import { Pane } from "evergreen-ui";
-import { Heading, Text } from "@chakra-ui/core";
+import { Heading, Text, Box } from "@chakra-ui/core";
 import Discord from "../assets/discord.png";
 import Countdown from "react-countdown";
 import Signup from "./Signup";
@@ -9,7 +8,7 @@ class Mission extends React.Component {
     render() {
         const mobile = this.props.mobile;
         return (
-            <Pane
+            <Box
                 textAlign="center"
                 paddingRight="10vw"
                 paddingLeft="10vw"
@@ -20,7 +19,7 @@ class Mission extends React.Component {
                 <Heading fontSize="48px" color="white">
                     Our Mission
                 </Heading>
-                <Pane marginTop="4vh">
+                <Box marginTop="4vh">
                     <Text
                         fontSize={mobile ? "18px" : "20px"}
                         lineHeight="28px"
@@ -32,18 +31,18 @@ class Mission extends React.Component {
                         learning. We seek to revolutionize traditional education
                         through technology.
                     </Text>
-                </Pane>
-                <Pane
+                </Box>
+                <Box
                     marginTop="4vh"
                     display={mobile ? "none" : "flex"}
                     justifyContent="center"
                 >
                     <img src={Discord} width="800px"></img>
-                </Pane>
-                {/* <Pane display="flex" justifyContent="center">
+                </Box>
+                {/* <Box display="flex" justifyContent="center">
                     <hr className="heading-bar"></hr>
-                </Pane>
-                <Pane textAlign="center" marginTop="5vh">
+                </Box>
+                <Box textAlign="center" marginTop="5vh">
                     <Heading size={mobile ? 600 : 700} color="#031b4e">
                         Sign up for our closed-beta and hear the latest news.
                     </Heading>
@@ -56,13 +55,13 @@ class Mission extends React.Component {
                             <Countdown date={1594839600000} />
                         </span>
                     </Heading>
-                    <Pane>
-                        <Pane marginTop="3vh" width="100%">
+                    <Box>
+                        <Box marginTop="3vh" width="100%">
                             <Signup alignment="center" />
-                        </Pane>
-                    </Pane>
-                </Pane> */}
-            </Pane>
+                        </Box>
+                    </Box>
+                </Box> */}
+            </Box>
         );
     }
 }

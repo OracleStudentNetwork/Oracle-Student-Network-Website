@@ -1,11 +1,10 @@
 import React from "react";
-import { Pane } from "evergreen-ui";
-import { Heading, Text, Badge } from "@chakra-ui/core";
+import { Heading, Text, Badge, Box } from "@chakra-ui/core";
 
 function Services(props) {
     const mobile = props.mobile;
     return (
-        <Pane
+        <Box
             paddingTop="15vh"
             paddingBottom="15vh"
             paddingRight="10vw"
@@ -16,7 +15,7 @@ function Services(props) {
             alignItems="center"
             background="#f3f5f9"
         >
-            <Pane>
+            <Box>
                 <Heading fontSize="48px" color="#212121" textAlign="center">
                     What We Do
                 </Heading>
@@ -33,12 +32,12 @@ function Services(props) {
                     be the first non-profit group to offer on-demand tutoring
                     through the convenience of a messaging platform.
                 </Text>
-                <Pane
+                <Box
                     display="flex"
                     flexDirection={mobile ? "column" : "row"}
                     justifyContent="space-between"
                 >
-                    <Pane
+                    <Box
                         textAlign={mobile ? "center" : "left"}
                         marginTop="10vh"
                         marginRight={mobile ? "" : "3vw"}
@@ -51,8 +50,8 @@ function Services(props) {
                             Log on to Oracle to receive on-demand homework help
                             and concept clarification, completely free!
                         </Text>
-                    </Pane>
-                    <Pane
+                    </Box>
+                    <Box
                         textAlign={mobile ? "center" : "left"}
                         marginTop="10vh"
                         marginLeft={mobile ? "" : "3vw"}
@@ -67,8 +66,8 @@ function Services(props) {
                             weekly gift card raffles. It’s important to leave
                             time to relax.
                         </Text>
-                    </Pane>
-                    <Pane
+                    </Box>
+                    <Box
                         textAlign={mobile ? "center" : "left"}
                         marginTop="10vh"
                         marginLeft={mobile ? "" : "3vw"}
@@ -85,10 +84,10 @@ function Services(props) {
                         <Badge variantColor="purple" marginTop="8px">
                             Coming Soon
                         </Badge>
-                    </Pane>
-                </Pane>
-            </Pane>
-        </Pane>
+                    </Box>
+                </Box>
+            </Box>
+        </Box>
     );
 }
 

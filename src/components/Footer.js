@@ -1,12 +1,11 @@
 import React from "react";
-import { Pane, Heading, Text, Link, Paragraph } from "evergreen-ui";
-import { Image } from "@chakra-ui/core";
+import { Image, Box, Heading, Link } from "@chakra-ui/core";
 import Logo from "../assets/logo_transparent.png";
 
 class Footer extends React.Component {
     render() {
         return (
-            <Pane
+            <Box
                 paddingRight="15vw"
                 paddingLeft="15vw"
                 paddingTop="5vh"
@@ -15,47 +14,29 @@ class Footer extends React.Component {
                 minHeight="60vh"
                 borderTop="1px white solid"
             >
-                <Pane
+                <Box
                     display="flex"
                     flexWrap="wrap"
                     justifyContent="space-evenly"
                 >
-                    <Pane display="flex" flexDirection="column">
-                        <Heading size={700} color="white" marginBottom="18px">
+                    <Box display="flex" flexDirection="column">
+                        <Heading size="lg" color="white" marginBottom="18px">
                             About Us
                         </Heading>
-                        <a href="/#mission" className="footer-links">
-                            <Paragraph color="white" size={500}>
-                                Our Mission
-                            </Paragraph>
-                        </a>
-                        <a href="/#services" className="footer-links">
-                            <Paragraph color="white" size={500}>
-                                What We Do
-                            </Paragraph>
-                        </a>
-                        <a href="/#learn-more" className="footer-links">
-                            <Paragraph color="white" size={500}>
-                                Learn More
-                            </Paragraph>
-                        </a>
-                        <a href="/#contact" className="footer-links">
-                            <Paragraph color="white" size={500}>
-                                Contact Us
-                            </Paragraph>
-                        </a>
-                    </Pane>
-                    {/* <Pane display="flex" flexDirection="column">
-                        <Heading size={700} color="white" marginBottom="18px">
-                            Terms of Use
-                        </Heading>
-                        <a href="/terms" className="footer-links">
-                            <Heading color="white" size={500}>
-                                Terms of Service
-                            </Heading>
-                        </a>
-                    </Pane> */}
-                </Pane>
+                        <Link href="/#mission" className="footer-links">
+                            Our Mission
+                        </Link>
+                        <Link href="/#services" className="footer-links">
+                            What We Do
+                        </Link>
+                        <Link href="/#learn-more" className="footer-links">
+                            Learn More
+                        </Link>
+                        <Link href="/#contact" className="footer-links">
+                            Contact Us
+                        </Link>
+                    </Box>
+                </Box>
                 <hr
                     style={{
                         border: "0px",
@@ -64,27 +45,33 @@ class Footer extends React.Component {
                         marginTop: "32px",
                     }}
                 ></hr>
-                <Pane
+                <Box
                     display="flex"
                     flexDirection={this.props.mobile ? "column" : "row"}
                     justifyContent="space-between"
                     marginTop="24px"
                 >
-                    <Pane
+                    <Box
                         display="flex"
                         alignItems="center"
                         justifyContent="center"
                     >
                         <Image src={Logo} height="30px" />
-                        <Text color="white" size={500} marginLeft="16px">
+                        <Link
+                            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=info@osn-reo.org&tf=1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            color="white"
+                            marginLeft="16px"
+                        >
                             info@osn-reo.org
-                        </Text>
-                    </Pane>
-                    <Pane
+                        </Link>
+                    </Box>
+                    <Box
                         textAlign="right"
                         marginTop={this.props.mobile ? "5vh" : ""}
                     >
-                        <Pane display="flex" justifyContent="center">
+                        <Box display="flex" justifyContent="center">
                             <a
                                 href="https://www.instagram.com/oraclestudentnetwork/"
                                 rel="noopener noreferrer"
@@ -129,10 +116,10 @@ class Footer extends React.Component {
                                     style={{ color: "white" }}
                                 ></i>
                             </a>
-                        </Pane>
-                    </Pane>
+                        </Box>
+                    </Box>
 
-                    {/* <Pane textAlign="center" flexGrow="1">
+                    {/* <Box textAlign="center" flexGrow="1">
                         <Heading
                             size={700}
                             color="white"
@@ -141,7 +128,7 @@ class Footer extends React.Component {
                         >
                             Join our mailing list
                         </Heading>
-                        <Pane
+                        <Box
                             display="flex"
                             flexDirection="row"
                             justifyContent="center"
@@ -163,10 +150,10 @@ class Footer extends React.Component {
                             >
                                 Sign Up
                             </Button>
-                        </Pane>
-                    </Pane> */}
-                </Pane>
-            </Pane>
+                        </Box>
+                    </Box> */}
+                </Box>
+            </Box>
         );
     }
 }
