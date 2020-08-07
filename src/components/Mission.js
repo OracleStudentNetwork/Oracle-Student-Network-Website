@@ -1,5 +1,6 @@
 import React from "react";
-import { Pane, Heading, Paragraph } from "evergreen-ui";
+import { Pane } from "evergreen-ui";
+import { Heading, Text } from "@chakra-ui/core";
 import Discord from "../assets/discord.png";
 import Countdown from "react-countdown";
 import Signup from "./Signup";
@@ -16,17 +17,11 @@ class Mission extends React.Component {
                 paddingBottom="15vh"
                 backgroundColor="#212121"
             >
-                <Heading
-                    size={900}
-                    fontSize="48px"
-                    fontWeight={1500}
-                    color="white"
-                >
+                <Heading fontSize="48px" color="white">
                     Our Mission
                 </Heading>
                 <Pane marginTop="4vh">
-                    <Paragraph
-                        size={500}
+                    <Text
                         fontSize={mobile ? "18px" : "20px"}
                         lineHeight="28px"
                         color="white"
@@ -36,9 +31,13 @@ class Mission extends React.Component {
                         their fullest potential during COVID-19 induced distance
                         learning. We seek to revolutionize traditional education
                         through technology.
-                    </Paragraph>
+                    </Text>
                 </Pane>
-                <Pane marginTop="4vh" display={mobile ? "none" : "inherit"}>
+                <Pane
+                    marginTop="4vh"
+                    display={mobile ? "none" : "flex"}
+                    justifyContent="center"
+                >
                     <img src={Discord} width="800px"></img>
                 </Pane>
                 {/* <Pane display="flex" justifyContent="center">

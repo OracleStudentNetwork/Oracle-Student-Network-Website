@@ -1,7 +1,8 @@
 import React from "react";
 import TimelineEvent from "./TimelineEvent";
 import Signup from "./Signup";
-import { Pane, Heading } from "evergreen-ui";
+import { Pane } from "evergreen-ui";
+import { Heading } from "@chakra-ui/core";
 
 class Timeline extends React.Component {
     render() {
@@ -18,12 +19,7 @@ class Timeline extends React.Component {
                 textAlign="center"
                 minHeight="400px"
             >
-                <Heading
-                    size={900}
-                    fontWeight={1500}
-                    fontSize="48px"
-                    color="#212121"
-                >
+                <Heading fontSize="48px" color="#212121">
                     Road Map
                 </Heading>
                 <Pane
@@ -68,7 +64,7 @@ class Timeline extends React.Component {
                     <hr className="heading-bar"></hr>
                 </Pane>
                 <Pane textAlign="center" marginTop="5vh">
-                    <Heading size={mobile ? 600 : 700} color="#212121">
+                    <Heading size="lg" color="#212121">
                         Sign up for our closed-beta and hear the latest news.
                     </Heading>
                     <Pane>

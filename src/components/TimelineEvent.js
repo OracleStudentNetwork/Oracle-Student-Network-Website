@@ -1,5 +1,6 @@
 import React from "react";
-import { Pane, Heading, Badge, TickCircleIcon } from "evergreen-ui";
+import { Pane } from "evergreen-ui";
+import { Heading, Badge, Icon } from "@chakra-ui/core";
 
 class TimelineEvent extends React.Component {
     render() {
@@ -12,18 +13,14 @@ class TimelineEvent extends React.Component {
                 width="100%"
             >
                 {this.props.icon}
-                <Heading size={700} marginTop={10} color="#212121">
+                <Heading size="md" marginTop={4} color="#212121">
                     {this.props.title}
-                    <TickCircleIcon
-                        color="success"
-                        display={this.props.complete ? "" : "none"}
-                        marginLeft={8}
-                    />
+                    <Icon name="check" marginLeft={2} color="purple.500" />
                 </Heading>
                 <Pane>
                     <Badge
-                        color={this.props.complete ? "blue" : "purple"}
-                        marginTop={10}
+                        variantColor={this.props.complete ? "blue" : "purple"}
+                        marginTop={2}
                     >
                         {this.props.date}
                     </Badge>
