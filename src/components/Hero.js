@@ -2,14 +2,13 @@ import React from "react";
 import HeroImage from "../assets/hero.png";
 import Logo from "../assets/logo.png";
 import Signup from "./Signup";
-import { Pane, Button, Paragraph, Avatar } from "evergreen-ui";
-import { Heading, Text } from "@chakra-ui/core";
+import { Heading, Text, Avatar, Box } from "@chakra-ui/core";
 
 class Hero extends React.Component {
     render() {
         const mobile = this.props.mobile;
         return (
-            <Pane
+            <Box
                 display="flex"
                 paddingBottom="10vh"
                 justifyContent="center"
@@ -19,7 +18,7 @@ class Hero extends React.Component {
                 paddingLeft="20px"
                 flexDirection={mobile ? "column" : "row"}
             >
-                <Pane
+                <Box
                     display="flex"
                     flexDirection="column"
                     justifyContent="center"
@@ -28,10 +27,10 @@ class Hero extends React.Component {
                     paddingLeft="20px"
                     paddingRight="20px"
                 >
-                    <Pane display={mobile ? "" : "none"} marginTop="20px">
-                        <Avatar src={Logo} size={180} />
-                    </Pane>
-                    <Pane textAlign={mobile ? "center" : ""} width="100%">
+                    <Box display={mobile ? "" : "none"} marginTop="20px">
+                        <Avatar src={Logo} size="2xl" />
+                    </Box>
+                    <Box textAlign={mobile ? "center" : ""} width="100%">
                         <Heading
                             size="2xl"
                             fontSize={mobile ? "42px" : "72px"}
@@ -52,16 +51,16 @@ class Hero extends React.Component {
                             Get involved by signing up for our closed beta
                             below.
                         </Text>
-                    </Pane>
-                    <Pane width="100%" marginTop="10px">
+                    </Box>
+                    <Box width="100%" marginTop="10px">
                         <Signup
                             alignment={mobile ? "center" : "left"}
                             width={mobile ? "100%" : "50%"}
                             mobile={mobile}
                         />
-                    </Pane>
-                </Pane>
-                <Pane
+                    </Box>
+                </Box>
+                <Box
                     display={mobile ? "none" : "flex"}
                     justifyContent="center"
                     paddingLeft="20px"
@@ -69,16 +68,16 @@ class Hero extends React.Component {
                     alignItems="center"
                     width="400px"
                 >
-                    <Pane>
+                    <Box>
                         <img
                             src={HeroImage}
                             height="auto"
                             width="100%"
                             alt="Hero"
                         />
-                    </Pane>
-                </Pane>
-            </Pane>
+                    </Box>
+                </Box>
+            </Box>
         );
     }
 }
