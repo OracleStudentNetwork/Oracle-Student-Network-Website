@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Text, Box } from "@chakra-ui/core";
+import { Heading, Text, Box, Image } from "@chakra-ui/core";
 import Discord from "../assets/discord.png";
 import Countdown from "react-countdown";
 import Signup from "./Signup";
@@ -37,7 +37,7 @@ class Mission extends React.Component {
                     display={mobile ? "none" : "flex"}
                     justifyContent="center"
                 >
-                    <img src={Discord} width="800px" height="auto"></img>
+                    <Image src={Discord} width="800px" height="auto" />
                 </Box>
                 {/* <Box display="flex" justifyContent="center">
                     <hr className="heading-bar"></hr>
