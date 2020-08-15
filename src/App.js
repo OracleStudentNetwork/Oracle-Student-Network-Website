@@ -5,16 +5,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Terms from "./pages/Terms";
 import Navbar from "./components/Navbar";
-import AOS from "aos";
 import Config from "./util/Config";
 import Firebase from "firebase/app";
 import "firebase/analytics";
 import "aos/dist/aos.css";
-AOS.init({
-    offset: 400,
-    once: true,
-    delay: 200,
-});
 
 function App() {
     if (!Firebase.apps.length) Firebase.initializeApp(Config);
@@ -23,7 +17,6 @@ function App() {
     return (
         <Router>
             <Navbar mobile={mobile} />
-            
             <Switch>
                 <Route path="/" exact component={Home} />
                 {/* <Route path="/terms" component={Terms} /> */}
