@@ -1,7 +1,7 @@
 import React from "react";
 import {
     Image,
-    Link,
+    Text,
     Drawer,
     Button,
     DrawerOverlay,
@@ -37,21 +37,21 @@ function Navbar(props) {
                         />
                     </a>
                     <ul className="navbar-links">
-                        <Heading size="sm" color="#212121">
+                        <Text fontSize="md" color="#212121">
                             <a href="/#mission">Our Mission</a>
-                        </Heading>
-                        <Heading size="sm" color="#212121">
+                        </Text>
+                        <Text fontSize="md" color="#212121">
+                            <a href="/#services">What We Do</a>
+                        </Text>
+                        <Text fontSize="md" color="#212121">
                             <a href="/#roadmap">Road Map</a>
-                        </Heading>
-                        <Heading size="sm" color="#212121">
+                        </Text>
+                        <Text fontSize="md" color="#212121">
                             <a href="/#learn-more">Learn More</a>
-                        </Heading>
-                        <Heading size="sm" color="#212121">
+                        </Text>
+                        <Text fontSize="md" color="#212121">
                             <a href="/#contact">Contact Us</a>
-                        </Heading>
-                        <Heading size="sm" color="#212121">
-                            <a href="/#contact">Contact Us</a>
-                        </Heading>
+                        </Text>
                     </ul>
                 </Box>
                 <Box>
@@ -104,42 +104,51 @@ function Navbar(props) {
                                     mt="20px"
                                 >
                                     <Box borderBottom="1px grey solid">
-                                        <Heading
-                                            size="lg"
-                                            py="3vh"
+                                        <Text
+                                            fontSize="xl"
                                             color="#212121"
+                                            py="3vh"
                                         >
                                             <a href="/#mission">Our Mission</a>
-                                        </Heading>
+                                        </Text>
                                     </Box>
                                     <Box borderBottom="1px grey solid">
-                                        <Heading
-                                            size="lg"
-                                            py="3vh"
+                                        <Text
+                                            fontSize="xl"
                                             color="#212121"
+                                            py="3vh"
+                                        >
+                                            <a href="/#services">What We Do</a>
+                                        </Text>
+                                    </Box>
+                                    <Box borderBottom="1px grey solid">
+                                        <Text
+                                            fontSize="xl"
+                                            color="#212121"
+                                            py="3vh"
                                         >
                                             <a href="/#roadmap">Road Map</a>
-                                        </Heading>
+                                        </Text>
                                     </Box>
                                     <Box borderBottom="1px grey solid">
-                                        <Heading
-                                            size="lg"
-                                            py="3vh"
+                                        <Text
+                                            fontSize="xl"
                                             color="#212121"
+                                            py="3vh"
                                         >
                                             <a href="/#learn-more">
                                                 Learn More
                                             </a>
-                                        </Heading>
+                                        </Text>
                                     </Box>
                                     <Box borderBottom="1px grey solid">
-                                        <Heading
-                                            size="lg"
-                                            py="3vh"
+                                        <Text
+                                            fontSize="xl"
                                             color="#212121"
+                                            py="3vh"
                                         >
                                             <a href="/#contact">Contact Us</a>
-                                        </Heading>
+                                        </Text>
                                     </Box>
                                     <Box py="3vh">
                                         <Googlesignin />
