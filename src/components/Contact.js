@@ -51,7 +51,7 @@ class Contact extends React.Component {
                     </a> */}
                 </Box>
                 <Box display="flex" marginTop="2em" justifyContent="center">
-                    <Box margin={10}>
+                    <Box margin="10px">
                         <a
                             href="https://apps.apple.com/us/app/discord-chat-for-games/id985746746"
                             rel="noopener noreferrer"
@@ -60,7 +60,7 @@ class Contact extends React.Component {
                             <Image src={Appstore} alt="Get it on App Store" />
                         </a>
                     </Box>
-                    <Box margin={10}>
+                    <Box margin="10px">
                         <a
                             href="https://play.google.com/store/apps/details?id=com.discord&hl=en_CA&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
                             rel="noopener noreferrer"
