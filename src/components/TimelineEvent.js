@@ -1,11 +1,10 @@
 import React from "react";
-import { Pane } from "evergreen-ui";
-import { Heading, Badge, Icon } from "@chakra-ui/core";
+import { Heading, Badge, Icon, Box } from "@chakra-ui/core";
 
 class TimelineEvent extends React.Component {
     render() {
         return (
-            <Pane
+            <Box
                 display="flex"
                 flexDirection="column"
                 alignItems="center"
@@ -22,15 +21,15 @@ class TimelineEvent extends React.Component {
                         display={this.props.complete ? "inline-block" : "none"}
                     />
                 </Heading>
-                <Pane>
+                <Box>
                     <Badge
                         variantColor={this.props.complete ? "blue" : "purple"}
                         marginTop={2}
                     >
                         {this.props.date}
                     </Badge>
-                </Pane>
-            </Pane>
+                </Box>
+            </Box>
         );
     }
 }
