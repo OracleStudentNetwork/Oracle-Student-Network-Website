@@ -23,6 +23,7 @@ function App() {
     return (
         <Router>
             <Navbar mobile={mobile} />
+            
             <Switch>
                 <Route path="/" exact component={Home} />
                 {/* <Route path="/terms" component={Terms} /> */}

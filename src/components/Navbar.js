@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, Link } from "@chakra-ui/core";
 import Logo from "../assets/nav_logo.png";
-
+import Googlesignin from "./Googlesignin";
 class Navbar extends React.Component {
     render() {
         return (
@@ -22,7 +22,9 @@ class Navbar extends React.Component {
                     <Link href="/#roadmap">Road Map</Link>
                     <Link href="/#learn-more">Learn more</Link>
                     <Link href="/#contact">Contact Us</Link>
+                   
                 </ul>
+                <Googlesignin/>
             </nav>
         );
     }
