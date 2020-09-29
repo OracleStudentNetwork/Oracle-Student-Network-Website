@@ -1,5 +1,5 @@
 import React from "react";
-import { Pane } from "evergreen-ui";
+import { Box } from "@chakra-ui/core";
 import { useMediaQuery } from "react-responsive";
 import ScrollableAnchor from "react-scrollable-anchor";
 import Hero from "../components/Hero";
@@ -9,11 +9,13 @@ import Timeline from "../components/Timeline";
 import LearnMore from "../components/LearnMore";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import SEO from "../components/SEO";
 
 function Home() {
     const mobile = useMediaQuery({ query: "(max-width: 900px)" });
     return (
-        <Pane>
+        <Box>
+            <SEO />
             <Hero mobile={mobile} />
             <ScrollableAnchor id={"mission"}>
                 <div>
@@ -41,7 +43,7 @@ function Home() {
                 </div>
             </ScrollableAnchor>
             <Footer mobile={mobile} />
-        </Pane>
+        </Box>
     );
 }
 
